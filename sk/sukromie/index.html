@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="../../style.css">
 <link rel="alternate" hreflang="cs" href="https://martinstrambach.github.io/tankuj-site/cs/soukromi/">
 <link rel="alternate" hreflang="sk" href="https://martinstrambach.github.io/tankuj-site/sk/sukromie/">
+<link rel="alternate" hreflang="de" href="https://martinstrambach.github.io/tankuj-site/de/datenschutz/">
 <link rel="alternate" hreflang="en" href="https://martinstrambach.github.io/tankuj-site/en/privacy/">
 </head>
 <body>
@@ -16,14 +17,15 @@
   <nav>
     <a href="../podpora/">Podpora</a>
     <a href="../../cs/soukromi/" lang="cs" hreflang="cs">Česky</a>
+    <a href="../../de/datenschutz/" lang="de" hreflang="de">Deutsch</a>
     <a href="../../en/privacy/" lang="en" hreflang="en">English</a>
   </nav>
 </header>
 <main>
   <h1>Zásady ochrany súkromia</h1>
-  <p class="meta">Platí od 6. septembra 2026</p>
+  <p class="meta">Platí od 15. septembra 2026</p>
 
-  <p>Tankuj nevyžaduje účet a nesleduje vás. Neobsahuje reklamy, analytiku ani iné knižnice tretích strán okrem klientskej knižnice, ktorou komunikuje s naším serverom. Z vášho iPhonu odchádza len to, čo je potrebné na zodpovedanie hľadania: súradnice miesta, okolo ktorého hľadáte, zvolené palivo a okruh. Nič z toho neukladáme.</p>
+  <p>Tankuj nevyžaduje účet a nesleduje vás. Neobsahuje reklamy. Z vášho iPhonu odchádza jednak to, čo je potrebné na zodpovedanie hľadania – súradnice miesta, okolo ktorého hľadáte, zvolené palivo a okruh; nič z toho neukladáme. A jednak verzia z App Storu posiela štatistiku používania a hlásenia pádov do služby Firebase, aby sme videli, ktoré funkcie sa používajú a na čom aplikácia padá. Čo presne to zahŕňa, je opísané nižšie.</p>
 
   <h2>Kto za aplikáciu zodpovedá</h2>
   <p>Aplikáciu Tankuj vyvíja a vydáva Martin Strambach („my“), ktorý je prevádzkovateľom osobných údajov pre spracúvanie opísané na tejto stránke. Kontakt: <a href="mailto:martin.strambach@gmail.com">martin.strambach@gmail.com</a>.</p>
@@ -37,6 +39,17 @@
   <p>Údaje o staniciach a cenách poskytuje backend prevádzkovaný na platforme Supabase (Supabase, Inc.) v Európskej únii, v regióne AWS eu-central-1 vo Frankfurte. Ako pri každej webovej službe zaznamenáva poskytovateľ hostingu technické logy požiadaviek, teda IP adresu, čas a volaný endpoint, na prevádzku a zabezpečenie služby. Tieto logy sa uchovávajú krátko, rádovo dni, a neslúžia na vašu identifikáciu.</p>
   <p>Tieto údaje spracúvame, aby sme poskytli službu, o ktorú žiadate (čl. 6 ods. 1 písm. b) GDPR), a v prípade technických logov na základe nášho oprávneného záujmu na bezpečnej prevádzke služby (čl. 6 ods. 1 písm. f) GDPR).</p>
 
+  <h2>Štatistika používania a hlásenia pádov</h2>
+  <p>Verzia z App Storu používa Firebase Analytics a Firebase Crashlytics od Googlu (Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Írsko). Vďaka nim vidíme, ktoré funkcie sa používajú a na čom aplikácia padá. Odosiela sa pritom:</p>
+  <ul>
+    <li>hŕstka udalostí o tom, čo sa v aplikácii deje – otvorená stanica, hľadanie, pridanie obľúbenej, spustenie navigácie, prepnutie paliva v grafe, otvorenie Look Around a otvorenie nastavení – vždy s údajmi o stanici a palive, nikdy so súradnicou;</li>
+    <li>identifikátor tejto inštalácie aplikácie, ktorý prideľuje Firebase, a obvyklé údaje o modeli zariadenia, verzii systému, verzii aplikácie a jazyku;</li>
+    <li>hrubá poloha, ktorú Firebase odvodí z IP adresy požiadavky, teda zhruba krajina a región – nie vaša poloha z GPS;</li>
+    <li>údaje o pádoch a výkone: výpis zásobníka, stav zariadenia v okamihu pádu, časy štartu.</li>
+  </ul>
+  <p>Tieto údaje nie sú spojené s vaším menom, aplikácia nepoužíva reklamný identifikátor a nič neodovzdáva na reklamné účely. Google ich spracúva ako sprostredkovateľ pre nás; prenos do USA pritom nie je vylúčený a opiera sa o rozhodnutie o primeranosti k rámcu EU-US Data Privacy Framework, prípadne o štandardné zmluvné doložky. Právnym základom je náš oprávnený záujem na zlepšovaní aplikácie a oprave chýb (čl. 6 ods. 1 písm. f) GDPR).</p>
+  <p>Verzia z TestFlightu posiela len hlásenia pádov, žiadnu štatistiku používania; vývojová verzia neposiela ani jedno. Vypnúť štatistiku priamo v aplikácii zatiaľ nejde – kto ju posielať nechce, môže nám napísať.</p>
+
   <h2>Nastavenia uložené v iPhone</h2>
   <p>Predvolené palivo, objem nádrže a zvolená navigačná aplikácia sa ukladajú iba vo vašom zariadení. Na náš server sa nikdy nedostanú a zmažú sa spolu s aplikáciou.</p>
 
@@ -44,10 +57,10 @@
   <p>Mapu, zábery Look Around a adresy staníc poskytujú Apple Maps a Apple tieto požiadavky spracúva podľa svojich <a href="https://www.apple.com/legal/privacy/">zásad ochrany súkromia</a>. Keď klepnete na Navigovať, Tankuj odovzdá súradnice stanice navigačnej aplikácii, ktorú ste zvolili, teda Apple Maps, Google Maps, Waze alebo Mapy.com, a od tej chvíle platia zásady danej aplikácie. V CarPlay ukazuje Tankuj rovnaké údaje na displeji auta a navigáciu odovzdáva Apple Maps; nič ďalšie sa nezbiera.</p>
 
   <h2>Žiadne sledovanie</h2>
-  <p>Tankuj neobsahuje reklamy, analytiku ani sledovanie. Nepoužíva reklamný identifikátor a nezdieľa údaje s tretími stranami na ich vlastné účely.</p>
+  <p>Tankuj neobsahuje reklamy a nesleduje vás naprieč aplikáciami ani webmi. Nepoužíva reklamný identifikátor a nezdieľa údaje s tretími stranami na ich vlastné účely. Štatistika opísaná vyššie slúži len na vývoj tejto aplikácie.</p>
 
   <h2>Vaše práva</h2>
-  <p>Pretože o vás žiadne osobné údaje neukladáme, nie je okrem krátkodobých serverových logov čo vydať, opraviť ani vymazať. Práva podľa GDPR, teda na prístup, opravu, vymazanie, obmedzenie spracúvania a námietku, vám napriek tomu zostávajú a môžete ich uplatniť, rovnako ako sa na čokoľvek k týmto zásadám opýtať, na vyššie uvedenej adrese. Sťažnosť môžete podať aj u dozorného orgánu v krajine, kde bývate – na Slovensku je to <a href="https://dataprotection.gov.sk">Úrad na ochranu osobných údajov SR</a>, v Česku <a href="https://uoou.gov.cz">Úřad pro ochranu osobních údajů</a>.</p>
+  <p>Okrem krátkodobých serverových logov a vyššie opísaných štatistických údajov, ktoré nie sú spojené s vaším menom, o vás nič neukladáme, takže obvykle nie je čo vydávať ani mazať. Práva podľa GDPR, teda na prístup, opravu, vymazanie, obmedzenie spracúvania a námietku, vám napriek tomu zostávajú a môžete ich uplatniť, rovnako ako sa na čokoľvek k týmto zásadám opýtať, na vyššie uvedenej adrese. Sťažnosť môžete podať aj u dozorného orgánu v krajine, kde bývate – na Slovensku je to <a href="https://dataprotection.gov.sk">Úrad na ochranu osobných údajov SR</a>, v Česku <a href="https://uoou.gov.cz">Úřad pro ochranu osobních údajů</a>.</p>
 
   <h2>Zmeny</h2>
   <p>Ak sa tieto zásady zmenia, upravíme túto stránku a dátum v jej záhlaví. Aktuálne znenie je vždy na tejto adrese.</p>

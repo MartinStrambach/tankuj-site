@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Datenschutzerklärung – TankUp</title>
+<meta name="description" content="Was TankUp, die App für Spritpreise in Österreich, Tschechien und der Slowakei, mit Ihrem Standort und anderen Daten macht.">
+<link rel="stylesheet" href="../../style.css">
+<link rel="alternate" hreflang="cs" href="https://martinstrambach.github.io/tankuj-site/cs/soukromi/">
+<link rel="alternate" hreflang="sk" href="https://martinstrambach.github.io/tankuj-site/sk/sukromie/">
+<link rel="alternate" hreflang="de" href="https://martinstrambach.github.io/tankuj-site/de/datenschutz/">
+<link rel="alternate" hreflang="en" href="https://martinstrambach.github.io/tankuj-site/en/privacy/">
+</head>
+<body>
+<header>
+  <a class="brand" href="../../">TankUp</a>
+  <nav>
+    <a href="../../en/support/" lang="en" hreflang="en">Support</a>
+    <a href="../../cs/soukromi/" lang="cs" hreflang="cs">Česky</a>
+    <a href="../../sk/sukromie/" lang="sk" hreflang="sk">Slovensky</a>
+    <a href="../../en/privacy/" lang="en" hreflang="en">English</a>
+  </nav>
+</header>
+<main>
+  <h1>Datenschutzerklärung</h1>
+  <p class="meta">Gültig ab 15. September 2026</p>
+
+  <p>TankUp braucht kein Konto und verfolgt Sie nicht. Die App enthält keine Werbung. Was Ihr iPhone verlässt, ist zum einen das, was für Ihre Suche nötig ist – die Koordinaten des Punktes, um den gesucht wird, der gewählte Kraftstoff und der Umkreis; wir speichern das nicht. Zum anderen sendet die Version aus dem App Store eine Nutzungsstatistik und Absturzberichte an Firebase, damit wir sehen, welche Funktionen verwendet werden und woran die App scheitert. Was das genau umfasst, steht weiter unten.</p>
+
+  <h2>Verantwortlicher</h2>
+  <p>TankUp wird von Martin Strambach („wir“) entwickelt und veröffentlicht; er ist der Verantwortliche für die auf dieser Seite beschriebene Verarbeitung. Kontakt: <a href="mailto:martin.strambach@gmail.com">martin.strambach@gmail.com</a>.</p>
+
+  <h2>Ihr Standort</h2>
+  <p>Mit Ihrer Erlaubnis liest TankUp Ihren Standort, solange die App geöffnet ist (Ortungsdienste, „Beim Verwenden der App“), um Tankstellen in Ihrer Nähe zu finden und deren Entfernung zu messen. Im Hintergrund liest die App Ihren Standort nicht.</p>
+  <p>Sucht die App nach Tankstellen, sendet sie die Koordinaten des Suchpunkts zusammen mit dem gewählten Kraftstoff und dem Umkreis an unseren Server. Der Suchpunkt ist Ihr Standort oder die Mitte der Karte, wenn Sie auf „Diesen Bereich durchsuchen“ tippen. Der Server antwortet mit den Tankstellen um diesen Punkt und behält die Koordinaten nicht: Sie werden nicht in unsere Datenbank geschrieben und weder mit Ihnen noch mit Ihrem Gerät verknüpft.</p>
+  <p>Wenn Sie den Standortzugriff ablehnen, funktioniert die App weiterhin: Sie verschieben die Karte selbst und durchsuchen den Bereich, den Sie wählen.</p>
+
+  <h2>Unser Server</h2>
+  <p>Die Tankstellen- und Preisdaten liefert ein Backend bei Supabase (Supabase, Inc.) in der Europäischen Union, in der AWS-Region eu-central-1 in Frankfurt. Wie bei jedem Webdienst führt der Hoster technische Protokolle über jede Anfrage – IP-Adresse, Zeitpunkt und aufgerufener Endpunkt –, um den Dienst zu betreiben und abzusichern. Diese Protokolle werden nur kurz, im Bereich von Tagen, aufbewahrt und nicht dazu verwendet, Sie zu identifizieren.</p>
+  <p>Diese Daten verarbeiten wir, um den von Ihnen angeforderten Dienst zu erbringen (Art. 6 Abs. 1 lit. b DSGVO), die technischen Protokolle auf Grundlage unseres berechtigten Interesses am sicheren Betrieb des Dienstes (Art. 6 Abs. 1 lit. f DSGVO).</p>
+
+  <h2>Nutzungsstatistik und Absturzberichte</h2>
+  <p>Die Version aus dem App Store verwendet Firebase Analytics und Firebase Crashlytics von Google (Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland). Damit sehen wir, welche Funktionen genutzt werden und woran die App abstürzt. Übermittelt werden dabei:</p>
+  <ul>
+    <li>eine Handvoll Ereignisse dazu, was in der App getan wird – eine geöffnete Tankstelle, eine Suche, ein gesetzter Favorit, ein Start der Navigation, ein Wechsel im Diagramm, die Umgebungsansicht, ein geöffneter Einstellungsbildschirm – jeweils mit Angaben zur Tankstelle und zum Kraftstoff, nie mit einer Koordinate;</li>
+    <li>eine von Firebase vergebene Kennung dieser App-Installation sowie die üblichen Angaben zu Gerätemodell, Betriebssystemversion, App-Version und Sprache;</li>
+    <li>ein grober Standort, den Firebase aus der IP-Adresse der Anfrage ableitet, etwa Land und Region – nicht Ihr GPS-Standort;</li>
+    <li>Absturz- und Leistungsdaten: Stapelüberwachung, Gerätezustand zum Zeitpunkt des Absturzes, Startzeiten.</li>
+  </ul>
+  <p>Diese Daten sind nicht mit Ihrem Namen verknüpft, TankUp verwendet keine Werbe-ID und gibt nichts zu Werbezwecken weiter. Google verarbeitet die Daten als Auftragsverarbeiter für uns; eine Übermittlung in die USA ist dabei nicht ausgeschlossen und stützt sich auf den Angemessenheitsbeschluss zum EU-US Data Privacy Framework beziehungsweise auf die Standardvertragsklauseln. Rechtsgrundlage ist unser berechtigtes Interesse daran, die App zu verbessern und Fehler zu beheben (Art. 6 Abs. 1 lit. f DSGVO).</p>
+  <p>Die TestFlight-Version sendet ausschließlich Absturzberichte und keine Nutzungsstatistik; eine Entwicklungsversion sendet beides nicht. Eine Möglichkeit, die Statistik in der App abzuschalten, gibt es derzeit nicht – wer sie nicht senden möchte, kann uns schreiben.</p>
+
+  <h2>Einstellungen auf Ihrem iPhone</h2>
+  <p>Ihr Standardkraftstoff, Ihr Tankvolumen, Ihre Favoriten und die gewählte Karten-App bleiben auf Ihrem Gerät. Sie erreichen unseren Server nicht und werden mit der App gelöscht.</p>
+
+  <h2>Apple Karten, CarPlay und Navigations-Apps</h2>
+  <p>Die Karte, die Bilder der Umgebungsansicht und die Adressen der Tankstellen stammen von Apple Karten; Apple verarbeitet diese Anfragen nach seiner eigenen <a href="https://www.apple.com/legal/privacy/">Datenschutzrichtlinie</a>. Tippen Sie auf „Navigieren“, übergibt TankUp die Koordinaten der Tankstelle an die von Ihnen gewählte App – Apple Karten, Google Maps, Waze oder Mapy.com –, und ab diesem Punkt gilt deren Datenschutzerklärung. In CarPlay zeigt TankUp dieselben Daten auf dem Display des Autos und übergibt die Navigation an Apple Karten; darüber hinaus wird nichts erhoben.</p>
+
+  <h2>Kein Tracking</h2>
+  <p>TankUp enthält keine Werbung und verfolgt Sie nicht über Apps oder Websites hinweg. Die App verwendet die Werbe-ID nicht und gibt keine Daten an Dritte für deren eigene Zwecke weiter.</p>
+
+  <h2>Ihre Rechte</h2>
+  <p>Sie haben die Rechte, die Ihnen die DSGVO gibt: Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch gegen eine Verarbeitung, die auf einem berechtigten Interesse beruht. Da wir außer den kurzlebigen Server-Protokollen und den oben beschriebenen, nicht mit Ihrem Namen verknüpften Statistikdaten nichts über Sie speichern, gibt es meist wenig herauszugeben oder zu löschen. Wenden Sie sich mit einem Anliegen oder einer Frage zu dieser Erklärung an die oben genannte Adresse.</p>
+  <p>Sie können sich außerdem bei der Datenschutz-Aufsichtsbehörde Ihres Wohnsitzlandes beschweren, in Österreich bei der <a href="https://www.dsb.gv.at">Datenschutzbehörde</a>, in Deutschland bei der für Ihr Bundesland zuständigen Behörde, oder bei der tschechischen Aufsichtsbehörde <a href="https://uoou.gov.cz">Úřad pro ochranu osobních údajů</a>.</p>
+
+  <h2>Änderungen</h2>
+  <p>Ändert sich diese Erklärung, aktualisieren wir diese Seite und das Datum oben. Die jeweils gültige Fassung steht immer unter dieser Adresse.</p>
+</main>
+<footer>
+  <p>Martin Strambach · <a href="mailto:martin.strambach@gmail.com">martin.strambach@gmail.com</a> · <a href="../../en/support/" lang="en" hreflang="en">Support</a></p>
+</footer>
+</body>
+</html>

@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="../../style.css">
 <link rel="alternate" hreflang="cs" href="https://martinstrambach.github.io/tankuj-site/cs/soukromi/">
 <link rel="alternate" hreflang="sk" href="https://martinstrambach.github.io/tankuj-site/sk/sukromie/">
+<link rel="alternate" hreflang="de" href="https://martinstrambach.github.io/tankuj-site/de/datenschutz/">
 <link rel="alternate" hreflang="en" href="https://martinstrambach.github.io/tankuj-site/en/privacy/">
 </head>
 <body>
@@ -17,13 +18,14 @@
     <a href="../support/">Support</a>
     <a href="../../cs/soukromi/" lang="cs" hreflang="cs">Česky</a>
     <a href="../../sk/sukromie/" lang="sk" hreflang="sk">Slovensky</a>
+    <a href="../../de/datenschutz/" lang="de" hreflang="de">Deutsch</a>
   </nav>
 </header>
 <main>
   <h1>Privacy Policy</h1>
-  <p class="meta">Effective 6 September 2026</p>
+  <p class="meta">Effective 15 September 2026</p>
 
-  <p>Tankuj needs no account and does not track you. It contains no advertising, no analytics and no third-party libraries other than the client library it uses to talk to our own server. The only data that leaves your iPhone is what is needed to answer your search: the coordinates of the point you are searching around, the fuel you chose and the radius. We do not store them.</p>
+  <p>Tankuj needs no account and does not track you. It contains no advertising. What leaves your iPhone is, first, what is needed to answer your search — the coordinates of the point you are searching around, the fuel you chose and the radius; we do not store them. And second, the App Store version sends usage statistics and crash reports to Firebase, so that we can see which features are used and where the app fails. What that covers exactly is described below.</p>
 
   <h2>Who is responsible</h2>
   <p>Tankuj is developed and published by Martin Strambach (“we”), who is the data controller for the processing described on this page. Contact: <a href="mailto:martin.strambach@gmail.com">martin.strambach@gmail.com</a>.</p>
@@ -37,6 +39,17 @@
   <p>Station and price data is served by a backend hosted on Supabase (Supabase, Inc.) in the European Union, in the AWS region eu-central-1 in Frankfurt. As with any web service, the hosting provider records technical logs of each request, meaning the IP address, the time and the endpoint called, to operate and secure the service. These logs are kept for a short time, a matter of days, and are not used to identify you.</p>
   <p>We process these data to provide the service you request (Article 6(1)(b) of the GDPR) and, for the technical logs, on the basis of our legitimate interest in running the service securely (Article 6(1)(f)).</p>
 
+  <h2>Usage statistics and crash reports</h2>
+  <p>The App Store version uses Firebase Analytics and Firebase Crashlytics from Google (Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland), so that we can see which features are used and where the app fails. What is sent is:</p>
+  <ul>
+    <li>a handful of events about what is done in the app — a station opened, a search, a favorite added, navigation started, the fuel switched on the graph, Look Around opened, Settings opened — each with the station and the fuel, never with a coordinate;</li>
+    <li>an identifier Firebase assigns to this installation of the app, and the usual device model, system version, app version and language;</li>
+    <li>a coarse location Firebase derives from the request's IP address, roughly the country and region — not your GPS location;</li>
+    <li>crash and performance data: the stack trace, the state of the device at the moment of the crash, launch times.</li>
+  </ul>
+  <p>None of it is linked to your name, the app does not use the advertising identifier and nothing is passed on for advertising. Google processes these data as a processor on our behalf; a transfer to the United States is not excluded and relies on the adequacy decision for the EU-US Data Privacy Framework, or on the standard contractual clauses. The legal basis is our legitimate interest in improving the app and fixing its faults (Article 6(1)(f) of the GDPR).</p>
+  <p>The TestFlight version sends crash reports only and no usage statistics; a development build sends neither. There is currently no switch in the app to turn the statistics off — write to us if you would rather not send them.</p>
+
   <h2>Settings stored on your iPhone</h2>
   <p>Your default fuel, your tank volume and the navigation app you chose are stored only on your device. They never reach our server and are deleted together with the app.</p>
 
@@ -44,10 +57,10 @@
   <p>The map, the Look Around imagery and the station addresses are provided by Apple Maps, and Apple processes those requests under its own <a href="https://www.apple.com/legal/privacy/">privacy policy</a>. When you tap Navigate, Tankuj hands the station's coordinates to the navigation app you chose, whether Apple Maps, Google Maps, Waze or Mapy.com, and that app's privacy policy applies from then on. In CarPlay, Tankuj shows the same data on the car's display and hands navigation to Apple Maps; nothing further is collected.</p>
 
   <h2>No tracking</h2>
-  <p>Tankuj contains no advertising, no analytics and no tracking. It does not use the advertising identifier and does not share data with third parties for their own purposes.</p>
+  <p>Tankuj contains no advertising and does not track you across apps or websites. It does not use the advertising identifier and does not share data with third parties for their own purposes. The statistics described above serve the development of this app alone.</p>
 
   <h2>Your rights</h2>
-  <p>Because we do not store personal data about you, there is nothing for us to hand over, correct or erase beyond the short-lived server logs. You still have the rights the GDPR gives you, including access, rectification, erasure, restriction and objection, and you can exercise them or ask anything about this policy at the address above. You can also lodge a complaint with the Czech Office for Personal Data Protection (<a href="https://uoou.gov.cz">Úřad pro ochranu osobních údajů</a>).</p>
+  <p>Beyond the short-lived server logs and the statistics described above, which are not linked to your name, we store nothing about you, so there is usually little to hand over or erase. You still have the rights the GDPR gives you, including access, rectification, erasure, restriction and objection, and you can exercise them or ask anything about this policy at the address above. You can also lodge a complaint with the Czech Office for Personal Data Protection (<a href="https://uoou.gov.cz">Úřad pro ochranu osobních údajů</a>).</p>
 
   <h2>Changes</h2>
   <p>If this policy changes, we will update this page and the date at the top. The current version always lives at this address.</p>
