@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="sl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Politika zasebnosti – Tankuj</title>
+<meta name="description" content="Kaj Tankaj, aplikacija s cenami goriv v Sloveniji, na Hrvaškem, v Avstriji, na Češkem in na Slovaškem, počne z vašo lokacijo in drugimi podatki.">
+<link rel="stylesheet" href="../../style.css">
+<link rel="alternate" hreflang="cs" href="https://martinstrambach.github.io/tankuj-site/cs/soukromi/">
+<link rel="alternate" hreflang="sk" href="https://martinstrambach.github.io/tankuj-site/sk/sukromie/">
+<link rel="alternate" hreflang="de" href="https://martinstrambach.github.io/tankuj-site/de/datenschutz/">
+<link rel="alternate" hreflang="hr" href="https://martinstrambach.github.io/tankuj-site/hr/privatnost/">
+<link rel="alternate" hreflang="sl" href="https://martinstrambach.github.io/tankuj-site/sl/zasebnost/">
+<link rel="alternate" hreflang="en" href="https://martinstrambach.github.io/tankuj-site/en/privacy/">
+</head>
+<body>
+<header>
+  <a class="brand" href="../../">Tankuj</a>
+  <nav>
+    <a href="../podpora/">Podpora</a>
+    <a href="../../cs/soukromi/" lang="cs" hreflang="cs">Česky</a>
+    <a href="../../sk/sukromie/" lang="sk" hreflang="sk">Slovensky</a>
+    <a href="../../de/datenschutz/" lang="de" hreflang="de">Deutsch</a>
+    <a href="../../hr/privatnost/" lang="hr" hreflang="hr">Hrvatski</a>
+    <a href="../../en/privacy/" lang="en" hreflang="en">English</a>
+  </nav>
+</header>
+<main>
+  <h1>Politika zasebnosti</h1>
+  <p class="meta">Velja od 20. septembra 2026.</p>
+
+  <p>Aplikacija Tankaj ne zahteva uporabniškega računa in vam ne sledi. V aplikaciji ni oglasov. Z vašega iPhona odide, prvič, tisto, kar je nujno za iskanje – koordinate točke, okoli katere se išče, izbrano gorivo in polmer; tega ne shranjujemo. Drugič, različica iz App Stora pošilja statistiko uporabe in poročila o zrušitvah Firebaseu, da vidimo, kaj se v aplikaciji uporablja in kje se lomi. Kaj natanko to obsega, je zapisano spodaj.</p>
+
+  <h2>Upravljavec</h2>
+  <p>Aplikacijo Tankaj razvija in objavlja Martin Strambach („mi“), ki je upravljavec obdelave, opisane na tej strani. Stik: <a href="mailto:martin.strambach@gmail.com">martin.strambach@gmail.com</a>.</p>
+
+  <h2>Vaša lokacija</h2>
+  <p>Z vašim dovoljenjem Tankaj bere vašo lokacijo, dokler je aplikacija odprta (lokacijske storitve, „Med uporabo aplikacije“), da najde črpalke v bližini in izmeri njihovo oddaljenost. V ozadju aplikacija vaše lokacije ne bere.</p>
+  <p>Ko aplikacija išče črpalke, pošlje koordinate točke iskanja skupaj z izbranim gorivom in polmerom na naš strežnik. Točka iskanja je vaša lokacija ali sredina zemljevida, če tapnete „Preišči to območje“. Strežnik odgovori s črpalkami okoli te točke in koordinat ne zadrži: ne zapišejo se v našo bazo in se ne povežejo ne z vami ne z vašo napravo.</p>
+  <p>Če dostop do lokacije zavrnete, aplikacija še vedno deluje: zemljevid premikate sami in preiščete območje, ki ga izberete.</p>
+
+  <h2>Naš strežnik</h2>
+  <p>Podatke o črpalkah in cenah streže zaledni sistem na Supabaseu (Supabase, Inc.) v Evropski uniji, v regiji AWS eu-central-1 v Frankfurtu. Kot pri vsaki spletni storitvi ponudnik vodi tehnične zapise o vsaki zahtevi – naslov IP, čas in klicano končno točko – za delovanje in varnost storitve. Ti zapisi se hranijo kratek čas, nekaj dni, in se ne uporabljajo za vaše prepoznavanje.</p>
+  <p>Te podatke obdelujemo za izvajanje storitve, ki ste jo zahtevali (člen 6(1)(b) GDPR), tehnične zapise pa na podlagi našega zakonitega interesa za varno delovanje storitve (člen 6(1)(f) GDPR).</p>
+
+  <h2>Statistika uporabe in poročila o zrušitvah</h2>
+  <p>Različica iz App Stora uporablja Firebase Analytics in Firebase Crashlytics podjetja Google (Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irska). Iz njih vidimo, kaj se v aplikaciji uporablja in kje se zruši. Pri tem se pošiljajo:</p>
+  <ul>
+    <li>peščica dogodkov o tem, kaj se v aplikaciji počne – odprta črpalka, iskanje, shranjena priljubljena črpalka, zagnana navigacija, sprememba v grafu, prikaz okolice, odprt zaslon nastavitev – vsak s podatki o črpalki in gorivu, nikoli s koordinato;</li>
+    <li>identifikator te namestitve aplikacije, ki ga dodeli Firebase, ter običajni podatki o modelu naprave, različici operacijskega sistema, različici aplikacije in jeziku;</li>
+    <li>groba lokacija, ki jo Firebase izpelje iz naslova IP zahteve, na primer država in regija – ne vaša lokacija GPS;</li>
+    <li>podatki o zrušitvah in zmogljivosti: sklad klicev, stanje naprave ob zrušitvi, časi zagona.</li>
+  </ul>
+  <p>Ti podatki niso povezani z vašim imenom, Tankaj ne uporablja oglaševalskega identifikatorja in ničesar ne posreduje za namene oglaševanja. Google podatke obdeluje kot naš obdelovalec; prenos v Združene države pri tem ni izključen in temelji na sklepu o ustreznosti za okvir EU-US Data Privacy Framework oziroma na standardnih pogodbenih klavzulah. Pravna podlaga je naš zakoniti interes, da aplikacijo izboljšujemo in odpravljamo napake (člen 6(1)(f) GDPR).</p>
+  <p>Različica iz TestFlighta pošilja izključno poročila o zrušitvah in nikakršne statistike; razvojna različica ne pošilja ne enega ne drugega. Možnosti, da bi statistiko izklopili v sami aplikaciji, zaenkrat ni – kdor je ne želi pošiljati, naj se nam oglasi.</p>
+
+  <h2>Nastavitve na vašem iPhonu</h2>
+  <p>Vaše privzeto gorivo, prostornina rezervoarja, priljubljene črpalke in izbrana aplikacija za zemljevide ostanejo na vaši napravi. Do našega strežnika ne pridejo in se izbrišejo skupaj z aplikacijo.</p>
+
+  <h2>Apple Maps, CarPlay in aplikacije za navigacijo</h2>
+  <p>Zemljevid, posnetki okolice in naslovi črpalk prihajajo iz Apple Maps; Apple te zahteve obdeluje po svoji <a href="https://www.apple.com/legal/privacy/">politiki zasebnosti</a>. Ko tapnete „Navigiraj“, Tankaj preda koordinate črpalke aplikaciji, ki ste jo izbrali – Apple Maps, Google Maps, Waze ali Mapy.com – in od tam naprej velja njihova politika zasebnosti. V CarPlayu Tankaj iste podatke prikaže na zaslonu avtomobila in navigacijo preda Apple Maps; nič se ne zbira povrh tega.</p>
+
+  <h2>Brez sledenja</h2>
+  <p>Tankaj nima oglasov in vam ne sledi po drugih aplikacijah ali spletnih straneh. Aplikacija ne uporablja oglaševalskega identifikatorja in podatkov ne posreduje tretjim za njihove lastne namene.</p>
+
+  <h2>Vaše pravice</h2>
+  <p>Imate pravice, ki vam jih daje GDPR: dostop, popravek, izbris, omejitev obdelave, prenosljivost podatkov in ugovor zoper obdelavo na podlagi zakonitega interesa. Ker o vas razen kratkotrajnih zapisov strežnika in zgoraj opisanih statističnih podatkov, ki niso povezani z vašim imenom, ničesar ne shranjujemo, je navadno malo tega, kar bi lahko izdali ali izbrisali. Z zahtevo ali vprašanjem o tej politiki se obrnite na zgornji naslov.</p>
+  <p>Pritožiti se lahko tudi pri nadzornem organu za varstvo podatkov v državi, v kateri živite, v Sloveniji pri <a href="https://www.ip-rs.si">Informacijskem pooblaščencu</a>, na Češkem pa pri organu <a href="https://uoou.gov.cz">Úřad pro ochranu osobních údajů</a>.</p>
+
+  <h2>Spremembe</h2>
+  <p>Če se ta politika spremeni, bomo posodobili to stran in datum na vrhu. Veljavna različica je vedno na tem naslovu.</p>
+</main>
+<footer>
+  <p>Martin Strambach · <a href="mailto:martin.strambach@gmail.com">martin.strambach@gmail.com</a> · <a href="../podpora/">Podpora</a></p>
+</footer>
+</body>
+</html>
