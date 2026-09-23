@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Polityka prywatności – Tankuj</title>
+<meta name="description" content="Co Tankuj, aplikacja z cenami paliw w Czechach, Austrii, na Słowacji, w Chorwacji i w Słowenii, robi z twoją lokalizacją i innymi danymi.">
+<link rel="stylesheet" href="../../style.css">
+<link rel="alternate" hreflang="cs" href="https://martinstrambach.github.io/tankuj-site/cs/soukromi/">
+<link rel="alternate" hreflang="sk" href="https://martinstrambach.github.io/tankuj-site/sk/sukromie/">
+<link rel="alternate" hreflang="de" href="https://martinstrambach.github.io/tankuj-site/de/datenschutz/">
+<link rel="alternate" hreflang="hr" href="https://martinstrambach.github.io/tankuj-site/hr/privatnost/">
+<link rel="alternate" hreflang="sl" href="https://martinstrambach.github.io/tankuj-site/sl/zasebnost/">
+<link rel="alternate" hreflang="pl" href="https://martinstrambach.github.io/tankuj-site/pl/prywatnosc/">
+<link rel="alternate" hreflang="en" href="https://martinstrambach.github.io/tankuj-site/en/privacy/">
+</head>
+<body>
+<header>
+  <a class="brand" href="../../">Tankuj</a>
+  <nav>
+    <a href="../pomoc/">Pomoc</a>
+    <a href="../../cs/soukromi/" lang="cs" hreflang="cs">Česky</a>
+    <a href="../../sk/sukromie/" lang="sk" hreflang="sk">Slovensky</a>
+    <a href="../../de/datenschutz/" lang="de" hreflang="de">Deutsch</a>
+    <a href="../../hr/privatnost/" lang="hr" hreflang="hr">Hrvatski</a>
+    <a href="../../sl/zasebnost/" lang="sl" hreflang="sl">Slovenščina</a>
+    <a href="../../en/privacy/" lang="en" hreflang="en">English</a>
+  </nav>
+</header>
+<main>
+  <h1>Polityka prywatności</h1>
+  <p class="meta">Obowiązuje od 23 września 2026 r.</p>
+
+  <p>Aplikacja Tankuj nie wymaga konta i cię nie śledzi. Nie ma w niej reklam. Z twojego iPhone’a wychodzi, po pierwsze, to, co jest niezbędne do wyszukiwania – współrzędne punktu, wokół którego szukamy, albo przebieg zaplanowanej trasy, a do tego wybrane paliwo i promień; tego nie przechowujemy. Po drugie, wersja z App Store wysyła do Firebase statystyki użytkowania i raporty o awariach, żebyśmy widzieli, z czego w aplikacji się korzysta i gdzie się psuje. Co dokładnie to obejmuje, opisujemy poniżej.</p>
+
+  <h2>Administrator</h2>
+  <p>Aplikację Tankuj tworzy i publikuje Martin Strambach („my”), który jest administratorem danych przetwarzanych w sposób opisany na tej stronie. Kontakt: <a href="mailto:martin.strambach@gmail.com">martin.strambach@gmail.com</a>.</p>
+
+  <h2>Twoja lokalizacja</h2>
+  <p>Za twoją zgodą Tankuj odczytuje twoją lokalizację, gdy aplikacja jest otwarta (usługi lokalizacji, „Podczas używania aplikacji”), żeby znaleźć stacje w pobliżu i zmierzyć odległość do nich. W tle aplikacja twojej lokalizacji nie odczytuje.</p>
+  <p>Gdy aplikacja szuka stacji, wysyła na nasz serwer współrzędne punktu wyszukiwania razem z wybranym paliwem i promieniem. Punktem wyszukiwania jest twoja lokalizacja albo środek mapy, jeśli stukniesz „Szukaj w tym obszarze”. Serwer odpowiada stacjami wokół tego punktu i nie zatrzymuje współrzędnych: nie są zapisywane w naszej bazie ani wiązane z tobą czy z twoim urządzeniem.</p>
+  <p>Gdy planujesz trasę, wyszukiwanie celu i samą trasę wyznacza Apple Maps, tak jak w aplikacji Mapy. Na nasz serwer trafia wtedy przebieg trasy, żeby znaleźć stacje wzdłuż niej; tak samo jak punkt wyszukiwania nie jest przechowywany.</p>
+  <p>Jeśli odmówisz dostępu do lokalizacji, aplikacja nadal działa: przesuwasz mapę sam i przeszukujesz wybrany obszar.</p>
+
+  <h2>Nasz serwer</h2>
+  <p>Dane o stacjach i cenach udostępnia system zaplecza w Supabase (Supabase, Inc.) w Unii Europejskiej, w regionie AWS eu-central-1 we Frankfurcie. Jak przy każdej usłudze internetowej dostawca prowadzi techniczne logi każdego zapytania – adres IP, czas i wywołany punkt końcowy – na potrzeby działania i bezpieczeństwa usługi. Logi są przechowywane krótko, kilka dni, i nie służą do identyfikowania ciebie.</p>
+  <p>Dane te przetwarzamy w celu świadczenia usługi, o którą prosisz (art. 6 ust. 1 lit. b RODO), a logi techniczne na podstawie naszego prawnie uzasadnionego interesu w bezpiecznym działaniu usługi (art. 6 ust. 1 lit. f RODO).</p>
+
+  <h2>Statystyki użytkowania i raporty o awariach</h2>
+  <p>Wersja z App Store korzysta z Firebase Analytics i Firebase Crashlytics firmy Google (Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irlandia). Dzięki nim widzimy, z czego w aplikacji się korzysta i gdzie ulega awarii. Wysyłane są:</p>
+  <ul>
+    <li>kilka zdarzeń o tym, co dzieje się w aplikacji – otwarta stacja, wyszukiwanie, zapisana ulubiona stacja, uruchomiona nawigacja, przesunięcie po wykresie, podgląd okolicy, otwarty ekran ustawień – każde z danymi o stacji i paliwie, nigdy ze współrzędnymi;</li>
+    <li>identyfikator tej instalacji aplikacji nadany przez Firebase oraz zwykłe dane o modelu urządzenia, wersji systemu, wersji aplikacji i języku;</li>
+    <li>przybliżona lokalizacja, którą Firebase wyprowadza z adresu IP zapytania, na przykład kraj i region – nie twoja lokalizacja GPS;</li>
+    <li>dane o awariach i wydajności: stos wywołań, stan urządzenia w chwili awarii, czasy uruchamiania.</li>
+  </ul>
+  <p>Dane te nie są powiązane z twoim nazwiskiem, Tankuj nie używa identyfikatora reklamowego i niczego nie przekazuje w celach reklamowych. Google przetwarza dane jako nasz podmiot przetwarzający; przekazanie ich do Stanów Zjednoczonych nie jest przy tym wykluczone i opiera się na decyzji stwierdzającej odpowiedni stopień ochrony dla ram EU-US Data Privacy Framework lub na standardowych klauzulach umownych. Podstawą prawną jest nasz prawnie uzasadniony interes w ulepszaniu aplikacji i usuwaniu błędów (art. 6 ust. 1 lit. f RODO).</p>
+  <p>Wersja z TestFlight wysyła wyłącznie raporty o awariach i żadnych statystyk; wersja deweloperska nie wysyła ani jednego, ani drugiego. Wyłączenia statystyk w samej aplikacji na razie nie ma – jeśli nie chcesz ich wysyłać, napisz do nas.</p>
+
+  <h2>Ustawienia na twoim iPhonie</h2>
+  <p>Domyślne paliwo, pojemność baku, ulubione stacje i wybrana aplikacja mapowa zostają na twoim urządzeniu, gdzie korzysta z nich także widżet na ekranie początkowym. Nie trafiają na nasz serwer i są usuwane razem z aplikacją.</p>
+
+  <h2>Apple Maps, CarPlay i aplikacje do nawigacji</h2>
+  <p>Mapa, zdjęcia okolicy i adresy stacji pochodzą z Apple Maps; Apple przetwarza te zapytania zgodnie ze swoją <a href="https://www.apple.com/legal/privacy/">polityką prywatności</a>. Gdy stukniesz „Nawiguj”, Tankuj przekazuje współrzędne stacji wybranej przez ciebie aplikacji – Apple Maps, Google Maps, Waze lub Mapy.com – i od tej chwili obowiązuje jej polityka prywatności. W CarPlay Tankuj pokazuje te same dane na ekranie samochodu i przekazuje nawigację do Apple Maps; nic więcej nie jest przy tym zbierane.</p>
+
+  <h2>Bez śledzenia</h2>
+  <p>Tankuj nie ma reklam i nie śledzi cię w innych aplikacjach ani na stronach internetowych. Aplikacja nie używa identyfikatora reklamowego i nie przekazuje danych osobom trzecim do ich własnych celów.</p>
+
+  <h2>Twoje prawa</h2>
+  <p>Przysługują ci prawa wynikające z RODO: dostęp do danych, ich sprostowanie, usunięcie, ograniczenie przetwarzania, przenoszenie danych oraz sprzeciw wobec przetwarzania opartego na prawnie uzasadnionym interesie. Ponieważ poza krótkotrwałymi logami serwera i opisanymi wyżej statystykami, które nie są powiązane z twoim nazwiskiem, nie przechowujemy o tobie niczego, zwykle niewiele jest do wydania czy usunięcia. Z żądaniem lub pytaniem dotyczącym tej polityki zwróć się na adres podany wyżej.</p>
+  <p>Możesz też złożyć skargę do organu nadzorczego w kraju, w którym mieszkasz – w Polsce do <a href="https://uodo.gov.pl">Prezesa Urzędu Ochrony Danych Osobowych</a>, w Czechach do <a href="https://uoou.gov.cz">Úřad pro ochranu osobních údajů</a>.</p>
+
+  <h2>Zmiany</h2>
+  <p>Jeśli ta polityka się zmieni, zaktualizujemy tę stronę i datę na górze. Obowiązująca wersja jest zawsze pod tym adresem.</p>
+</main>
+<footer>
+  <p>Martin Strambach · <a href="mailto:martin.strambach@gmail.com">martin.strambach@gmail.com</a> · <a href="../pomoc/">Pomoc</a></p>
+</footer>
+</body>
+</html>
