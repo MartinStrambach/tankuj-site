@@ -4,18 +4,19 @@ The public pages of **Tankuj**, the Czech fuel-price app for iPhone and CarPlay:
 page and the privacy policy that its App Store listing links to. GitHub Pages serves the
 `main` branch at <https://martinstrambach.github.io/tankuj-site/>.
 
-| Page | Czech | Slovak | German | Croatian | Slovenian | Polish | English |
-|------|-------|--------|--------|----------|-----------|--------|---------|
-| Support | [`/cs/podpora/`](https://martinstrambach.github.io/tankuj-site/cs/podpora/) | [`/sk/podpora/`](https://martinstrambach.github.io/tankuj-site/sk/podpora/) | [`/de/hilfe/`](https://martinstrambach.github.io/tankuj-site/de/hilfe/) | [`/hr/podrska/`](https://martinstrambach.github.io/tankuj-site/hr/podrska/) | [`/sl/podpora/`](https://martinstrambach.github.io/tankuj-site/sl/podpora/) | [`/pl/pomoc/`](https://martinstrambach.github.io/tankuj-site/pl/pomoc/) | [`/en/support/`](https://martinstrambach.github.io/tankuj-site/en/support/) |
-| Privacy policy | [`/cs/soukromi/`](https://martinstrambach.github.io/tankuj-site/cs/soukromi/) | [`/sk/sukromie/`](https://martinstrambach.github.io/tankuj-site/sk/sukromie/) | [`/de/datenschutz/`](https://martinstrambach.github.io/tankuj-site/de/datenschutz/) | [`/hr/privatnost/`](https://martinstrambach.github.io/tankuj-site/hr/privatnost/) | [`/sl/zasebnost/`](https://martinstrambach.github.io/tankuj-site/sl/zasebnost/) | [`/pl/prywatnosc/`](https://martinstrambach.github.io/tankuj-site/pl/prywatnosc/) | [`/en/privacy/`](https://martinstrambach.github.io/tankuj-site/en/privacy/) |
+| Page | Czech | Slovak | German | Croatian | Slovenian | Polish | Italian | English |
+|------|-------|--------|--------|----------|-----------|--------|---------|---------|
+| Support | [`/cs/podpora/`](https://martinstrambach.github.io/tankuj-site/cs/podpora/) | [`/sk/podpora/`](https://martinstrambach.github.io/tankuj-site/sk/podpora/) | [`/de/hilfe/`](https://martinstrambach.github.io/tankuj-site/de/hilfe/) | [`/hr/podrska/`](https://martinstrambach.github.io/tankuj-site/hr/podrska/) | [`/sl/podpora/`](https://martinstrambach.github.io/tankuj-site/sl/podpora/) | [`/pl/pomoc/`](https://martinstrambach.github.io/tankuj-site/pl/pomoc/) | [`/it/supporto/`](https://martinstrambach.github.io/tankuj-site/it/supporto/) | [`/en/support/`](https://martinstrambach.github.io/tankuj-site/en/support/) |
+| Privacy policy | [`/cs/soukromi/`](https://martinstrambach.github.io/tankuj-site/cs/soukromi/) | [`/sk/sukromie/`](https://martinstrambach.github.io/tankuj-site/sk/sukromie/) | [`/de/datenschutz/`](https://martinstrambach.github.io/tankuj-site/de/datenschutz/) | [`/hr/privatnost/`](https://martinstrambach.github.io/tankuj-site/hr/privatnost/) | [`/sl/zasebnost/`](https://martinstrambach.github.io/tankuj-site/sl/zasebnost/) | [`/pl/prywatnosc/`](https://martinstrambach.github.io/tankuj-site/pl/prywatnosc/) | [`/it/privacy/`](https://martinstrambach.github.io/tankuj-site/it/privacy/) | [`/en/privacy/`](https://martinstrambach.github.io/tankuj-site/en/privacy/) |
 
 Plain HTML and one stylesheet, no build step; `.nojekyll` keeps GitHub from running Jekyll.
 A push to `main` is live within a minute or two.
 
 The German pages are the app's pages for Austria, the German-speaking country the app has
 prices for. The Polish pages are for a country with no prices at all: their reader is a
-driver fuelling across the Czech or Slovak border or on the way south, and they say so.
-German, Croatian, Slovenian and Polish are the only privacy policies that describe the
+driver fuelling across the Czech or Slovak border or on the way south, and they say so. The
+Italian pages are Italy's, the country with the most stations in the app, and call it TankUp.
+German, Croatian, Slovenian, Polish and Italian are the only privacy policies that describe the
 Firebase analytics and crash reporting the released app sends; **the Czech, Slovak and
 English pages still say the app has no analytics and must be brought in line.**
 
