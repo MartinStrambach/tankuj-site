@@ -31,9 +31,9 @@
 </header>
 <main>
   <h1>Informativa sulla privacy</h1>
-  <p class="meta">In vigore dal 28 settembre 2026</p>
+  <p class="meta">In vigore dal 23 ottobre 2026</p>
 
-  <p>TankUp non richiede un account e non ti traccia. Non contiene pubblicità. Dal tuo iPhone esce, per prima cosa, ciò che serve a rispondere alla tua ricerca – le coordinate del punto intorno a cui cerchi, oppure il tracciato del percorso che hai pianificato, insieme al carburante e al raggio scelti; non li conserviamo. In secondo luogo, la versione dell'App Store invia a Firebase statistiche d'uso e rapporti sugli arresti anomali, così possiamo vedere quali funzioni vengono usate e dove l'app si blocca. Cosa comprende esattamente è descritto qui sotto.</p>
+  <p>TankUp non richiede un account e non ti traccia. Non contiene pubblicità. Dal tuo iPhone esce, per prima cosa, ciò che serve a rispondere alla tua ricerca – le coordinate del punto intorno a cui cerchi, oppure il tracciato del percorso che hai pianificato, insieme al carburante e al raggio scelti; non li conserviamo. In secondo luogo, la versione dell'App Store invia a Firebase statistiche d'uso e rapporti sugli arresti anomali, così possiamo vedere quali funzioni vengono usate e dove l'app si blocca. In terzo luogo, se imposti un avviso di prezzo, l'app lo copia sul nostro server, così possiamo avvisarti quando il prezzo cambia. Cosa comprende esattamente è descritto qui sotto.</p>
 
   <h2>Titolare del trattamento</h2>
   <p>TankUp è sviluppata e pubblicata da Martin Strambach (“noi”), titolare del trattamento dei dati descritto in questa pagina. Contatto: <a href="mailto:martin.strambach@gmail.com">martin.strambach@gmail.com</a>.</p>
@@ -59,8 +59,17 @@
   <p>Nulla di tutto ciò è collegato al tuo nome, l'app non usa l'identificativo pubblicitario e nulla viene ceduto a fini pubblicitari. Google tratta questi dati come responsabile del trattamento per nostro conto; un trasferimento negli Stati Uniti non è escluso e si basa sulla decisione di adeguatezza per l'EU-US Data Privacy Framework o sulle clausole contrattuali standard. La base giuridica è il nostro legittimo interesse a migliorare l'app e a correggerne i difetti (art. 6, par. 1, lett. f del GDPR).</p>
   <p>La versione TestFlight invia solo i rapporti sugli arresti anomali e nessuna statistica; una build di sviluppo non invia né gli uni né le altre. Al momento l'app non ha un'opzione per disattivare le statistiche: scrivici se preferisci non inviarle.</p>
 
+  <h2>Avvisi di prezzo</h2>
+  <p>Un distributore preferito può avere un avviso di prezzo per ogni carburante, con il momento in cui avvisarti: a ogni variazione, quando il prezzo sale, quando scende o quando scende sotto un prezzo che imposti tu. Un nuovo preferito riceve un avviso a ogni variazione del tuo carburante predefinito, che puoi modificare o disattivare. Perché le notifiche ti raggiungano, l'app copia i tuoi avvisi sul nostro server: è l'unica cosa che vi conserva. Vengono inviati e conservati:</p>
+  <ul>
+    <li>ogni avviso: il distributore, il carburante, la regola e, per “Il prezzo scende sotto”, il tuo prezzo;</li>
+    <li>un identificativo casuale che l'app crea per questa installazione e il Firebase Installation ID, l'indirizzo a cui Firebase Cloud Messaging recapita le notifiche.</li>
+  </ul>
+  <p>Un'installazione senza avvisi non invia nulla di tutto ciò e non è sul nostro server. Quando disattivi l'ultimo avviso, o togli l'ultimo preferito che ne ha uno, il server elimina subito l'installazione e i suoi avvisi. Se elimini l'app, vengono eliminati la prossima volta che le viene inviata una notifica e Firebase segnala che l'app non c'è più. Nulla di tutto ciò è collegato al tuo nome: non esiste un account.</p>
+  <p>Quando un prezzo seguito cambia, il nostro server invia la notifica tramite Firebase Cloud Messaging di Google, che la consegna al servizio di notifiche push di Apple; la notifica contiene il nome del distributore, il carburante e il prezzo vecchio e nuovo. Firebase conta le notifiche inviate e aperte per regola e carburante, non per distributore, e l'impostazione, la rimozione o l'apertura di un avviso rientrano nelle statistiche d'uso descritte sopra, con la regola ma mai con il tuo prezzo. Google agisce, come descritto sopra, come nostro responsabile del trattamento. Trattiamo questi dati per fornirti gli avvisi che chiedi (art. 6, par. 1, lett. b del GDPR).</p>
+
   <h2>Le impostazioni sul tuo iPhone</h2>
-  <p>Il carburante predefinito, la capacità del serbatoio, i distributori preferiti, Casa e Lavoro e l'app di navigazione scelta restano solo sul tuo dispositivo, dove li usa anche il widget della schermata Home. Non arrivano al nostro server e vengono eliminati insieme all'app.</p>
+  <p>Il carburante predefinito, la capacità del serbatoio, i distributori preferiti, Casa e Lavoro e l'app di navigazione scelta restano solo sul tuo dispositivo, dove li usa anche il widget della schermata Home. Non arrivano al nostro server e vengono eliminati insieme all'app, tranne gli avvisi di prezzo dei preferiti, che l'app copia sul nostro server come descritto sopra.</p>
 
   <h2>Apple Maps, CarPlay e app di navigazione</h2>
   <p>La mappa, le immagini Look Around e gli indirizzi dei distributori sono forniti da Apple Maps, e Apple tratta queste richieste secondo la propria <a href="https://www.apple.com/legal/privacy/">informativa sulla privacy</a>. Quando tocchi “Naviga”, TankUp passa le coordinate del distributore all'app di navigazione che hai scelto – Apple Maps, Google Maps, Waze o Mapy.com – e da quel momento vale l'informativa di quell'app. In CarPlay, TankUp mostra gli stessi dati sullo schermo dell'auto e affida la navigazione ad Apple Maps; non viene raccolto nient'altro.</p>
@@ -69,7 +78,7 @@
   <p>TankUp non contiene pubblicità e non ti traccia tra altre app o siti web. Non usa l'identificativo pubblicitario e non condivide dati con terzi per i loro scopi.</p>
 
   <h2>I tuoi diritti</h2>
-  <p>Hai i diritti che ti riconosce il GDPR: accesso, rettifica, cancellazione, limitazione del trattamento, portabilità e opposizione al trattamento basato sul legittimo interesse. Poiché, oltre ai log del server di breve durata e alle statistiche descritte sopra, che non sono collegate al tuo nome, non conserviamo nulla su di te, di solito c'è poco da consegnare o cancellare. Per esercitare questi diritti o per qualsiasi domanda su questa informativa scrivi all'indirizzo indicato sopra.</p>
+  <p>Hai i diritti che ti riconosce il GDPR: accesso, rettifica, cancellazione, limitazione del trattamento, portabilità e opposizione al trattamento basato sul legittimo interesse. Poiché, oltre ai log del server di breve durata e alle statistiche e agli avvisi di prezzo descritti sopra, nessuno dei quali è collegato al tuo nome, non conserviamo nulla su di te, di solito c'è poco da consegnare o cancellare. Un avviso di prezzo puoi cancellarlo tu stesso disattivandolo. Per esercitare questi diritti o per qualsiasi domanda su questa informativa scrivi all'indirizzo indicato sopra.</p>
   <p>Puoi anche proporre reclamo all'autorità di controllo del paese in cui vivi – in Italia al <a href="https://www.garanteprivacy.it">Garante per la protezione dei dati personali</a>, nella Repubblica Ceca all'<a href="https://uoou.gov.cz">Úřad pro ochranu osobních údajů</a>.</p>
 
   <h2>Modifiche</h2>

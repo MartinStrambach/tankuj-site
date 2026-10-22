@@ -31,9 +31,9 @@
 </header>
 <main>
   <h1>Zásady ochrany súkromia</h1>
-  <p class="meta">Platí od 15. septembra 2026</p>
+  <p class="meta">Platí od 23. októbra 2026</p>
 
-  <p>Tankuj nevyžaduje účet a nesleduje vás. Neobsahuje reklamy. Z vášho iPhonu odchádza jednak to, čo je potrebné na zodpovedanie hľadania – súradnice miesta, okolo ktorého hľadáte, zvolené palivo a okruh; nič z toho neukladáme. A jednak verzia z App Storu posiela štatistiku používania a hlásenia pádov do služby Firebase, aby sme videli, ktoré funkcie sa používajú a na čom aplikácia padá. Čo presne to zahŕňa, je opísané nižšie.</p>
+  <p>Tankuj nevyžaduje účet a nesleduje vás. Neobsahuje reklamy. Z vášho iPhonu odchádza jednak to, čo je potrebné na zodpovedanie hľadania – súradnice miesta, okolo ktorého hľadáte, zvolené palivo a okruh; nič z toho neukladáme. A jednak verzia z App Storu posiela štatistiku používania a hlásenia pádov do služby Firebase, aby sme videli, ktoré funkcie sa používajú a na čom aplikácia padá. Ak si navyše nastavíte cenové upozornenie, aplikácia ho skopíruje na náš server, aby sme vám mohli dať vedieť, keď sa cena zmení. Čo presne to zahŕňa, je opísané nižšie.</p>
 
   <h2>Kto za aplikáciu zodpovedá</h2>
   <p>Aplikáciu Tankuj vyvíja a vydáva Martin Strambach („my“), ktorý je prevádzkovateľom osobných údajov pre spracúvanie opísané na tejto stránke. Kontakt: <a href="mailto:martin.strambach@gmail.com">martin.strambach@gmail.com</a>.</p>
@@ -58,8 +58,17 @@
   <p>Tieto údaje nie sú spojené s vaším menom, aplikácia nepoužíva reklamný identifikátor a nič neodovzdáva na reklamné účely. Google ich spracúva ako sprostredkovateľ pre nás; prenos do USA pritom nie je vylúčený a opiera sa o rozhodnutie o primeranosti k rámcu EU-US Data Privacy Framework, prípadne o štandardné zmluvné doložky. Právnym základom je náš oprávnený záujem na zlepšovaní aplikácie a oprave chýb (čl. 6 ods. 1 písm. f) GDPR).</p>
   <p>Verzia z TestFlightu posiela len hlásenia pádov, žiadnu štatistiku používania; vývojová verzia neposiela ani jedno. Vypnúť štatistiku priamo v aplikácii zatiaľ nejde – kto ju posielať nechce, môže nám napísať.</p>
 
+  <h2>Cenové upozornenia</h2>
+  <p>Obľúbená stanica môže mať pri každom palive cenové upozornenie s tým, kedy sa vám ozvať: pri každej zmene, keď cena stúpne, keď klesne, alebo keď klesne pod cenu, ktorú si zadáte. Nová obľúbená stanica dostane upozornenie na každú zmenu vášho predvoleného paliva; môžete ho zmeniť alebo vypnúť. Aby k vám oznámenia došli, aplikácia vaše upozornenia skopíruje na náš server – je to jediné, čo tam kedy ukladá. Odosiela a uchováva sa:</p>
+  <ul>
+    <li>každé upozornenie: stanica, palivo, pravidlo a pri „Cena klesne pod“ vami zadaná cena;</li>
+    <li>náhodný identifikátor, ktorý si aplikácia pre túto inštaláciu vytvorí, a Firebase Installation ID, teda adresa, na ktorú služba Firebase Cloud Messaging oznámenia doručuje.</li>
+  </ul>
+  <p>Inštalácia bez upozornenia nič z toho neposiela a na našom serveri nie je. Keď vypnete posledné upozornenie alebo odoberiete poslednú obľúbenú stanicu, ktorá nejaké má, server inštaláciu aj jej upozornenia hneď zmaže. Ak aplikáciu zmažete, zmažú sa, keď sa na ňu nabudúce pokúsime poslať oznámenie a Firebase ohlási, že aplikácia už nie je. Nič z toho nie je spojené s vaším menom: žiadny účet neexistuje.</p>
+  <p>Keď sa sledovaná cena zmení, náš server pošle oznámenie cez Firebase Cloud Messaging od Googlu, ktorý ho odovzdá službe Applu na push oznámenia; oznámenie nesie názov stanice, palivo a starú a novú cenu. Firebase počíta odoslané a otvorené oznámenia podľa pravidla a paliva, nie podľa stanice, a nastavenie, odobratie či otvorenie upozornenia sa započíta do vyššie opísanej štatistiky používania, s pravidlom, ale nikdy s vašou cenou. Google pritom vystupuje ako náš sprostredkovateľ, ako je opísané vyššie. Tieto údaje spracúvame, aby sme vám poskytli upozornenia, o ktoré žiadate (čl. 6 ods. 1 písm. b) GDPR).</p>
+
   <h2>Nastavenia uložené v iPhone</h2>
-  <p>Predvolené palivo, objem nádrže a zvolená navigačná aplikácia sa ukladajú iba vo vašom zariadení. Na náš server sa nikdy nedostanú a zmažú sa spolu s aplikáciou.</p>
+  <p>Predvolené palivo, objem nádrže a zvolená navigačná aplikácia sa ukladajú iba vo vašom zariadení. Ukladajú sa tam aj vaše obľúbené stanice. Nič z toho sa nedostane na náš server a všetko sa zmaže spolu s aplikáciou – okrem cenových upozornení, ktoré aplikácia kopíruje na náš server, ako je opísané vyššie.</p>
 
   <h2>Apple Maps, CarPlay a navigačné aplikácie</h2>
   <p>Mapu, zábery Look Around a adresy staníc poskytujú Apple Maps a Apple tieto požiadavky spracúva podľa svojich <a href="https://www.apple.com/legal/privacy/">zásad ochrany súkromia</a>. Keď klepnete na Navigovať, Tankuj odovzdá súradnice stanice navigačnej aplikácii, ktorú ste zvolili, teda Apple Maps, Google Maps, Waze alebo Mapy.com, a od tej chvíle platia zásady danej aplikácie. V CarPlay ukazuje Tankuj rovnaké údaje na displeji auta a navigáciu odovzdáva Apple Maps; nič ďalšie sa nezbiera.</p>
@@ -68,7 +77,7 @@
   <p>Tankuj neobsahuje reklamy a nesleduje vás naprieč aplikáciami ani webmi. Nepoužíva reklamný identifikátor a nezdieľa údaje s tretími stranami na ich vlastné účely. Štatistika opísaná vyššie slúži len na vývoj tejto aplikácie.</p>
 
   <h2>Vaše práva</h2>
-  <p>Okrem krátkodobých serverových logov a vyššie opísaných štatistických údajov, ktoré nie sú spojené s vaším menom, o vás nič neukladáme, takže obvykle nie je čo vydávať ani mazať. Práva podľa GDPR, teda na prístup, opravu, vymazanie, obmedzenie spracúvania a námietku, vám napriek tomu zostávajú a môžete ich uplatniť, rovnako ako sa na čokoľvek k týmto zásadám opýtať, na vyššie uvedenej adrese. Sťažnosť môžete podať aj u dozorného orgánu v krajine, kde bývate – na Slovensku je to <a href="https://dataprotection.gov.sk">Úrad na ochranu osobných údajov SR</a>, v Česku <a href="https://uoou.gov.cz">Úřad pro ochranu osobních údajů</a>.</p>
+  <p>Okrem krátkodobých serverových logov, vyššie opísaných štatistických údajov a cenových upozornení, z ktorých nič nie je spojené s vaším menom, o vás nič neukladáme, takže obvykle nie je čo vydávať ani mazať. Cenové upozornenie zmažete sami tým, že ho vypnete. Práva podľa GDPR, teda na prístup, opravu, vymazanie, obmedzenie spracúvania a námietku, vám napriek tomu zostávajú a môžete ich uplatniť, rovnako ako sa na čokoľvek k týmto zásadám opýtať, na vyššie uvedenej adrese. Sťažnosť môžete podať aj u dozorného orgánu v krajine, kde bývate – na Slovensku je to <a href="https://dataprotection.gov.sk">Úrad na ochranu osobných údajov SR</a>, v Česku <a href="https://uoou.gov.cz">Úřad pro ochranu osobních údajů</a>.</p>
 
   <h2>Zmeny</h2>
   <p>Ak sa tieto zásady zmenia, upravíme túto stránku a dátum v jej záhlaví. Aktuálne znenie je vždy na tejto adrese.</p>

@@ -31,9 +31,9 @@
 </header>
 <main>
   <h1>Pravila privatnosti</h1>
-  <p class="meta">Vrijedi od 16. rujna 2026.</p>
+  <p class="meta">Vrijedi od 23. listopada 2026.</p>
 
-  <p>Tankuj ne traži korisnički račun i ne prati vas. U aplikaciji nema reklama. S vašeg iPhonea odlazi, prvo, ono što je nužno za pretragu – koordinate točke oko koje se traži, odabrano gorivo i krug; to ne pohranjujemo. Drugo, verzija iz App Storea šalje statistiku korištenja i izvješća o rušenjima Firebaseu, kako bismo vidjeli što se u aplikaciji koristi i na čemu se lomi. Što to točno obuhvaća, piše niže.</p>
+  <p>Tankuj ne traži korisnički račun i ne prati vas. U aplikaciji nema reklama. S vašeg iPhonea odlazi, prvo, ono što je nužno za pretragu – koordinate točke oko koje se traži, odabrano gorivo i krug; to ne pohranjujemo. Drugo, verzija iz App Storea šalje statistiku korištenja i izvješća o rušenjima Firebaseu, kako bismo vidjeli što se u aplikaciji koristi i na čemu se lomi. Treće, ako postavite obavijest o cijeni, aplikacija je kopira na naš poslužitelj kako bismo vam javili kad se cijena promijeni. Što to točno obuhvaća, piše niže.</p>
 
   <h2>Voditelj obrade</h2>
   <p>Tankuj razvija i objavljuje Martin Strambach („mi”) i on je voditelj obrade opisane na ovoj stranici. Kontakt: <a href="mailto:martin.strambach@gmail.com">martin.strambach@gmail.com</a>.</p>
@@ -58,8 +58,17 @@
   <p>Ti podaci nisu povezani s vašim imenom, Tankuj ne koristi oglasni identifikator i ništa ne prosljeđuje u svrhe oglašavanja. Google podatke obrađuje kao izvršitelj obrade za nas; prijenos u Sjedinjene Države pritom nije isključen i temelji se na odluci o primjerenosti za okvir EU-US Data Privacy Framework, odnosno na standardnim ugovornim klauzulama. Pravna je osnova naš legitimni interes da aplikaciju poboljšavamo i ispravljamo pogreške (čl. 6. st. 1. t. f) GDPR-a).</p>
   <p>Verzija iz TestFlighta šalje isključivo izvješća o rušenjima i nikakvu statistiku; razvojna verzija ne šalje ni jedno ni drugo. Mogućnosti da se statistika isključi u samoj aplikaciji zasad nema – tko je ne želi slati, neka nam se javi.</p>
 
+  <h2>Obavijesti o cijeni</h2>
+  <p>Omiljena postaja može za svako gorivo imati obavijest o cijeni, uz to kada da vam se javi: pri svakoj promjeni, kad cijena raste, kad pada ili kad padne ispod cijene koju sami odredite. Novi favorit dobiva obavijest pri svakoj promjeni vašeg zadanog goriva, koju možete promijeniti ili isključiti. Da bi vam poruke stigle, aplikacija vaše obavijesti o cijeni kopira na naš poslužitelj – to je jedino što ondje ikad pohranjuje. Šalje se i čuva:</p>
+  <ul>
+    <li>svaka obavijest: postaja, gorivo, pravilo i, za „Cijena padne ispod“, vaša cijena;</li>
+    <li>nasumični identifikator koji aplikacija stvara za ovu instalaciju i Firebase Installation ID, adresa na koju Firebase Cloud Messaging dostavlja poruke.</li>
+  </ul>
+  <p>Instalacija bez obavijesti ništa od toga ne šalje i nema je na našem poslužitelju. Kad isključite posljednju obavijest ili uklonite posljednji favorit koji je ima, poslužitelj odmah briše instalaciju i njezine obavijesti. Ako obrišete aplikaciju, brišu se sljedeći put kad joj se pošalje poruka, a Firebase javi da aplikacije više nema. Ništa od toga nije povezano s vašim imenom: korisničkog računa nema.</p>
+  <p>Kad se praćena cijena promijeni, naš poslužitelj šalje poruku putem usluge Firebase Cloud Messaging tvrtke Google, koja je predaje Appleovoj usluzi push obavijesti; poruka sadrži naziv postaje, gorivo te staru i novu cijenu. Firebase broji poslane i otvorene poruke po pravilu i gorivu, ne po postaji, a postavljanje, uklanjanje ili otvaranje obavijesti ubraja se u gore opisanu statistiku korištenja, s pravilom, ali nikad s vašom cijenom. Google je pritom, kao što je gore opisano, naš izvršitelj obrade. Te podatke obrađujemo kako bismo vam pružili obavijesti koje tražite (čl. 6. st. 1. t. b) GDPR-a).</p>
+
   <h2>Postavke na vašem iPhoneu</h2>
-  <p>Vaše zadano gorivo, obujam spremnika, favoriti i odabrana aplikacija za karte ostaju na vašem uređaju. Do našeg poslužitelja ne dolaze i brišu se zajedno s aplikacijom.</p>
+  <p>Vaše zadano gorivo, obujam spremnika, favoriti i odabrana aplikacija za karte ostaju na vašem uređaju. Do našeg poslužitelja ne dolaze i brišu se zajedno s aplikacijom – osim obavijesti o cijeni za favorite, koje aplikacija kopira na naš poslužitelj kako je opisano gore.</p>
 
   <h2>Apple Maps, CarPlay i aplikacije za navigaciju</h2>
   <p>Karta, snimke okolice i adrese postaja dolaze iz Apple Mapsa; Apple te zahtjeve obrađuje prema vlastitim <a href="https://www.apple.com/legal/privacy/">pravilima privatnosti</a>. Kada dodirnete „Navigiraj”, Tankuj predaje koordinate postaje aplikaciji koju ste odabrali – Apple Maps, Google Maps, Waze ili Mapy.com – i od te točke vrijede njihova pravila privatnosti. U CarPlayu Tankuj iste podatke prikazuje na zaslonu automobila i navigaciju predaje Apple Mapsu; ništa se povrh toga ne prikuplja.</p>
@@ -68,7 +77,7 @@
   <p>Tankuj nema reklama i ne prati vas kroz druge aplikacije ni internetske stranice. Aplikacija ne koristi oglasni identifikator i ne prosljeđuje podatke trećima za njihove vlastite svrhe.</p>
 
   <h2>Vaša prava</h2>
-  <p>Imate prava koja vam daje GDPR: pristup, ispravak, brisanje, ograničenje obrade, prenosivost podataka i prigovor na obradu koja se temelji na legitimnom interesu. Budući da osim kratkotrajnih zapisa poslužitelja i gore opisanih statističkih podataka, koji nisu povezani s vašim imenom, o vama ništa ne pohranjujemo, obično je malo toga za izdati ili obrisati. Sa zahtjevom ili pitanjem o ovim pravilima obratite se na gornju adresu.</p>
+  <p>Imate prava koja vam daje GDPR: pristup, ispravak, brisanje, ograničenje obrade, prenosivost podataka i prigovor na obradu koja se temelji na legitimnom interesu. Budući da osim kratkotrajnih zapisa poslužitelja te gore opisanih statističkih podataka i obavijesti o cijeni, od kojih ništa nije povezano s vašim imenom, o vama ništa ne pohranjujemo, obično je malo toga za izdati ili obrisati. Obavijest o cijeni brišete sami tako da je isključite. Sa zahtjevom ili pitanjem o ovim pravilima obratite se na gornju adresu.</p>
   <p>Možete se i požaliti nadzornom tijelu za zaštitu podataka u državi u kojoj živite, u Hrvatskoj <a href="https://azop.hr">Agenciji za zaštitu osobnih podataka</a>, a u Češkoj tijelu <a href="https://uoou.gov.cz">Úřad pro ochranu osobních údajů</a>.</p>
 
   <h2>Izmjene</h2>

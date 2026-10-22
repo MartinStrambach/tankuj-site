@@ -31,9 +31,9 @@
 </header>
 <main>
   <h1>Datenschutzerklärung</h1>
-  <p class="meta">Gültig ab 15. September 2026</p>
+  <p class="meta">Gültig ab 23. Oktober 2026</p>
 
-  <p>TankUp braucht kein Konto und verfolgt Sie nicht. Die App enthält keine Werbung. Was Ihr iPhone verlässt, ist zum einen das, was für Ihre Suche nötig ist – die Koordinaten des Punktes, um den gesucht wird, der gewählte Kraftstoff und der Umkreis; wir speichern das nicht. Zum anderen sendet die Version aus dem App Store eine Nutzungsstatistik und Absturzberichte an Firebase, damit wir sehen, welche Funktionen verwendet werden und woran die App scheitert. Was das genau umfasst, steht weiter unten.</p>
+  <p>TankUp braucht kein Konto und verfolgt Sie nicht. Die App enthält keine Werbung. Was Ihr iPhone verlässt, ist zum einen das, was für Ihre Suche nötig ist – die Koordinaten des Punktes, um den gesucht wird, der gewählte Kraftstoff und der Umkreis; wir speichern das nicht. Zum anderen sendet die Version aus dem App Store eine Nutzungsstatistik und Absturzberichte an Firebase, damit wir sehen, welche Funktionen verwendet werden und woran die App scheitert. Und wenn Sie einen Preisalarm einrichten, kopiert die App ihn auf unseren Server, damit wir Ihnen Bescheid geben können, wenn sich der Preis ändert. Was das genau umfasst, steht weiter unten.</p>
 
   <h2>Verantwortlicher</h2>
   <p>TankUp wird von Martin Strambach („wir“) entwickelt und veröffentlicht; er ist der Verantwortliche für die auf dieser Seite beschriebene Verarbeitung. Kontakt: <a href="mailto:martin.strambach@gmail.com">martin.strambach@gmail.com</a>.</p>
@@ -58,8 +58,17 @@
   <p>Diese Daten sind nicht mit Ihrem Namen verknüpft, TankUp verwendet keine Werbe-ID und gibt nichts zu Werbezwecken weiter. Google verarbeitet die Daten als Auftragsverarbeiter für uns; eine Übermittlung in die USA ist dabei nicht ausgeschlossen und stützt sich auf den Angemessenheitsbeschluss zum EU-US Data Privacy Framework beziehungsweise auf die Standardvertragsklauseln. Rechtsgrundlage ist unser berechtigtes Interesse daran, die App zu verbessern und Fehler zu beheben (Art. 6 Abs. 1 lit. f DSGVO).</p>
   <p>Die TestFlight-Version sendet ausschließlich Absturzberichte und keine Nutzungsstatistik; eine Entwicklungsversion sendet beides nicht. Eine Möglichkeit, die Statistik in der App abzuschalten, gibt es derzeit nicht – wer sie nicht senden möchte, kann uns schreiben.</p>
 
+  <h2>Preisalarme</h2>
+  <p>Eine favorisierte Tankstelle kann für jeden Kraftstoff einen Preisalarm haben, mit dem Zeitpunkt, zu dem Sie benachrichtigt werden: bei jeder Änderung, wenn der Preis steigt, wenn er fällt, oder wenn er unter einen Preis fällt, den Sie festlegen. Ein neuer Favorit erhält einen Alarm bei jeder Änderung Ihres Standardkraftstoffs, den Sie ändern oder abschalten können. Damit die Mitteilungen Sie erreichen, kopiert die App Ihre Preisalarme auf unseren Server – das Einzige, was sie dort je speichert. Übermittelt und gespeichert werden:</p>
+  <ul>
+    <li>jeder Alarm: die Tankstelle, der Kraftstoff, die Regel und bei „Preis fällt unter“ Ihr Preis;</li>
+    <li>eine zufällige Kennung, die die App für diese Installation erzeugt, und die Firebase Installation ID, die Adresse, an die Firebase Cloud Messaging die Mitteilungen zustellt.</li>
+  </ul>
+  <p>Eine Installation ohne Alarm sendet nichts davon und ist auf unserem Server nicht vorhanden. Schalten Sie den letzten Alarm ab oder entfernen Sie den letzten Favoriten, der einen hat, löscht der Server die Installation und ihre Alarme sofort. Löschen Sie die App, werden sie gelöscht, sobald das nächste Mal eine Mitteilung an sie geht und Firebase meldet, dass die App nicht mehr da ist. Nichts davon ist mit Ihrem Namen verknüpft: Es gibt kein Konto.</p>
+  <p>Ändert sich ein beobachteter Preis, sendet unser Server die Mitteilung über Firebase Cloud Messaging von Google, das sie an den Push-Dienst von Apple übergibt; sie enthält den Namen der Tankstelle, den Kraftstoff sowie den alten und den neuen Preis. Firebase zählt gesendete und geöffnete Mitteilungen nach Regel und Kraftstoff, nicht nach Tankstelle, und das Einrichten, Entfernen oder Öffnen eines Alarms fließt in die oben beschriebene Nutzungsstatistik ein, mit der Regel, aber nie mit Ihrem Preis. Google ist dabei, wie oben beschrieben, unser Auftragsverarbeiter. Diese Daten verarbeiten wir, um die Alarme zu liefern, die Sie anfordern (Art. 6 Abs. 1 lit. b DSGVO).</p>
+
   <h2>Einstellungen auf Ihrem iPhone</h2>
-  <p>Ihr Standardkraftstoff, Ihr Tankvolumen, Ihre Favoriten und die gewählte Karten-App bleiben auf Ihrem Gerät. Sie erreichen unseren Server nicht und werden mit der App gelöscht.</p>
+  <p>Ihr Standardkraftstoff, Ihr Tankvolumen, Ihre Favoriten und die gewählte Karten-App bleiben auf Ihrem Gerät. Sie erreichen unseren Server nicht und werden mit der App gelöscht – mit Ausnahme der Preisalarme Ihrer Favoriten, die die App wie oben beschrieben auf unseren Server kopiert.</p>
 
   <h2>Apple Karten, CarPlay und Navigations-Apps</h2>
   <p>Die Karte, die Bilder der Umgebungsansicht und die Adressen der Tankstellen stammen von Apple Karten; Apple verarbeitet diese Anfragen nach seiner eigenen <a href="https://www.apple.com/legal/privacy/">Datenschutzrichtlinie</a>. Tippen Sie auf „Navigieren“, übergibt TankUp die Koordinaten der Tankstelle an die von Ihnen gewählte App – Apple Karten, Google Maps, Waze oder Mapy.com –, und ab diesem Punkt gilt deren Datenschutzerklärung. In CarPlay zeigt TankUp dieselben Daten auf dem Display des Autos und übergibt die Navigation an Apple Karten; darüber hinaus wird nichts erhoben.</p>
@@ -68,7 +77,7 @@
   <p>TankUp enthält keine Werbung und verfolgt Sie nicht über Apps oder Websites hinweg. Die App verwendet die Werbe-ID nicht und gibt keine Daten an Dritte für deren eigene Zwecke weiter.</p>
 
   <h2>Ihre Rechte</h2>
-  <p>Sie haben die Rechte, die Ihnen die DSGVO gibt: Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch gegen eine Verarbeitung, die auf einem berechtigten Interesse beruht. Da wir außer den kurzlebigen Server-Protokollen und den oben beschriebenen, nicht mit Ihrem Namen verknüpften Statistikdaten nichts über Sie speichern, gibt es meist wenig herauszugeben oder zu löschen. Wenden Sie sich mit einem Anliegen oder einer Frage zu dieser Erklärung an die oben genannte Adresse.</p>
+  <p>Sie haben die Rechte, die Ihnen die DSGVO gibt: Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch gegen eine Verarbeitung, die auf einem berechtigten Interesse beruht. Da wir außer den kurzlebigen Server-Protokollen sowie den oben beschriebenen Statistikdaten und Preisalarmen, die alle nicht mit Ihrem Namen verknüpft sind, nichts über Sie speichern, gibt es meist wenig herauszugeben oder zu löschen. Einen Preisalarm löschen Sie selbst, indem Sie ihn abschalten. Wenden Sie sich mit einem Anliegen oder einer Frage zu dieser Erklärung an die oben genannte Adresse.</p>
   <p>Sie können sich außerdem bei der Datenschutz-Aufsichtsbehörde Ihres Wohnsitzlandes beschweren, in Österreich bei der <a href="https://www.dsb.gv.at">Datenschutzbehörde</a>, in Deutschland bei der für Ihr Bundesland zuständigen Behörde, oder bei der tschechischen Aufsichtsbehörde <a href="https://uoou.gov.cz">Úřad pro ochranu osobních údajů</a>.</p>
 
   <h2>Änderungen</h2>
