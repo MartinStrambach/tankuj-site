@@ -31,9 +31,9 @@
 </header>
 <main>
   <h1>Privacy Policy</h1>
-  <p class="meta">Effective 15 September 2026</p>
+  <p class="meta">Effective 23 October 2026</p>
 
-  <p>Tankuj needs no account and does not track you. It contains no advertising. What leaves your iPhone is, first, what is needed to answer your search — the coordinates of the point you are searching around, the fuel you chose and the radius; we do not store them. And second, the App Store version sends usage statistics and crash reports to Firebase, so that we can see which features are used and where the app fails. What that covers exactly is described below.</p>
+  <p>Tankuj needs no account and does not track you. It contains no advertising. What leaves your iPhone is, first, what is needed to answer your search — the coordinates of the point you are searching around, the fuel you chose and the radius; we do not store them. And second, the App Store version sends usage statistics and crash reports to Firebase, so that we can see which features are used and where the app fails. Third, if you set a price alert, the app copies it to our server so that we can tell you when the price changes. What that covers exactly is described below.</p>
 
   <h2>Who is responsible</h2>
   <p>Tankuj is developed and published by Martin Strambach (“we”), who is the data controller for the processing described on this page. Contact: <a href="mailto:martin.strambach@gmail.com">martin.strambach@gmail.com</a>.</p>
@@ -58,8 +58,17 @@
   <p>None of it is linked to your name, the app does not use the advertising identifier and nothing is passed on for advertising. Google processes these data as a processor on our behalf; a transfer to the United States is not excluded and relies on the adequacy decision for the EU-US Data Privacy Framework, or on the standard contractual clauses. The legal basis is our legitimate interest in improving the app and fixing its faults (Article 6(1)(f) of the GDPR).</p>
   <p>The TestFlight version sends crash reports only and no usage statistics; a development build sends neither. There is currently no switch in the app to turn the statistics off — write to us if you would rather not send them.</p>
 
+  <h2>Price alerts</h2>
+  <p>A favorite station can carry a price alert for each fuel, with the moment to tell you: on every change, when the price rises, when it drops, or when it drops below a price you set. A new favorite comes with an alert on every change of your default fuel, which you can change or switch off. For the notifications to reach you, the app copies your alerts to our server — the one thing it ever stores there. What is sent and kept is:</p>
+  <ul>
+    <li>each alert: the station, the fuel, the rule and, for “drops below”, your price;</li>
+    <li>a random identifier the app creates for this installation, and the Firebase Installation ID, the address Firebase Cloud Messaging delivers the notifications to.</li>
+  </ul>
+  <p>An installation with no alert sends none of this and is not on our server. When you switch off the last alert, or remove the last favorite that carries one, the server deletes the installation and its alerts at once. If you delete the app, they are deleted the next time a notification is sent to it and Firebase reports the app gone. None of it is linked to your name: there is no account.</p>
+  <p>When a watched price changes, our server sends the notification through Firebase Cloud Messaging from Google, which hands it to Apple's push notification service; it carries the station's name, the fuel and the old and new price. Firebase counts the notifications sent and opened, by rule and fuel but not by station, and setting, removing or opening an alert is counted in the usage statistics above, with the rule but never your price. Google acts as our processor, as described above. We process these data to provide the alerts you ask for (Article 6(1)(b) of the GDPR).</p>
+
   <h2>Settings stored on your iPhone</h2>
-  <p>Your default fuel, your tank volume and the navigation app you chose are stored only on your device. They never reach our server and are deleted together with the app.</p>
+  <p>Your default fuel, your tank volume and the navigation app you chose are stored only on your device. Your favorite stations are kept there too. None of it reaches our server, and all of it is deleted together with the app — except the price alerts, which the app copies to our server as described above.</p>
 
   <h2>Apple Maps, CarPlay and navigation apps</h2>
   <p>The map, the Look Around imagery and the station addresses are provided by Apple Maps, and Apple processes those requests under its own <a href="https://www.apple.com/legal/privacy/">privacy policy</a>. When you tap Navigate, Tankuj hands the station's coordinates to the navigation app you chose, whether Apple Maps, Google Maps, Waze or Mapy.com, and that app's privacy policy applies from then on. In CarPlay, Tankuj shows the same data on the car's display and hands navigation to Apple Maps; nothing further is collected.</p>
@@ -68,7 +77,7 @@
   <p>Tankuj contains no advertising and does not track you across apps or websites. It does not use the advertising identifier and does not share data with third parties for their own purposes. The statistics described above serve the development of this app alone.</p>
 
   <h2>Your rights</h2>
-  <p>Beyond the short-lived server logs and the statistics described above, which are not linked to your name, we store nothing about you, so there is usually little to hand over or erase. You still have the rights the GDPR gives you, including access, rectification, erasure, restriction and objection, and you can exercise them or ask anything about this policy at the address above. You can also lodge a complaint with the Czech Office for Personal Data Protection (<a href="https://uoou.gov.cz">Úřad pro ochranu osobních údajů</a>).</p>
+  <p>Beyond the short-lived server logs, the statistics and the price alerts described above, none of which is linked to your name, we store nothing about you, so there is usually little to hand over or erase. A price alert you can erase yourself, by switching it off. You still have the rights the GDPR gives you, including access, rectification, erasure, restriction and objection, and you can exercise them or ask anything about this policy at the address above. You can also lodge a complaint with the Czech Office for Personal Data Protection (<a href="https://uoou.gov.cz">Úřad pro ochranu osobních údajů</a>).</p>
 
   <h2>Changes</h2>
   <p>If this policy changes, we will update this page and the date at the top. The current version always lives at this address.</p>

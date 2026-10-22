@@ -16,9 +16,11 @@ The German pages are the app's pages for Austria, the German-speaking country th
 prices for. The Polish pages are for a country with no prices at all: their reader is a
 driver fuelling across the Czech or Slovak border or on the way south, and they say so. The
 Italian pages are Italy's, the country with the most stations in the app, and call it TankUp.
-German, Croatian, Slovenian, Polish and Italian are the only privacy policies that describe the
-Firebase analytics and crash reporting the released app sends; **the Czech, Slovak and
-English pages still say the app has no analytics and must be brought in line.**
+Every privacy policy describes the Firebase analytics and crash reporting the released app
+sends, and the price alerts it copies to the server for push notifications. They follow the
+app's privacy manifest (`Tankuj/Resources/PrivacyInfo.xcprivacy` in the app's repository) and
+its App Privacy answers in App Store Connect: **a change to what the app collects reaches all
+eight pages at once.**
 
 The App Store listing points at these URLs (`support_url.txt` and `privacy_url.txt`
 per locale in the app's repository), so moving or renaming a page means changing the

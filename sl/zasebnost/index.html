@@ -31,9 +31,9 @@
 </header>
 <main>
   <h1>Politika zasebnosti</h1>
-  <p class="meta">Velja od 20. septembra 2026.</p>
+  <p class="meta">Velja od 23. oktobra 2026.</p>
 
-  <p>Aplikacija Tankaj ne zahteva uporabniškega računa in vam ne sledi. V aplikaciji ni oglasov. Z vašega iPhona odide, prvič, tisto, kar je nujno za iskanje – koordinate točke, okoli katere se išče, izbrano gorivo in polmer; tega ne shranjujemo. Drugič, različica iz App Stora pošilja statistiko uporabe in poročila o zrušitvah Firebaseu, da vidimo, kaj se v aplikaciji uporablja in kje se lomi. Kaj natanko to obsega, je zapisano spodaj.</p>
+  <p>Aplikacija Tankaj ne zahteva uporabniškega računa in vam ne sledi. V aplikaciji ni oglasov. Z vašega iPhona odide, prvič, tisto, kar je nujno za iskanje – koordinate točke, okoli katere se išče, izbrano gorivo in polmer; tega ne shranjujemo. Drugič, različica iz App Stora pošilja statistiko uporabe in poročila o zrušitvah Firebaseu, da vidimo, kaj se v aplikaciji uporablja in kje se lomi. Tretjič, če nastavite cenovno obvestilo, ga aplikacija kopira na naš strežnik, da vam lahko sporočimo, ko se cena spremeni. Kaj natanko to obsega, je zapisano spodaj.</p>
 
   <h2>Upravljavec</h2>
   <p>Aplikacijo Tankaj razvija in objavlja Martin Strambach („mi“), ki je upravljavec obdelave, opisane na tej strani. Stik: <a href="mailto:martin.strambach@gmail.com">martin.strambach@gmail.com</a>.</p>
@@ -58,8 +58,17 @@
   <p>Ti podatki niso povezani z vašim imenom, Tankaj ne uporablja oglaševalskega identifikatorja in ničesar ne posreduje za namene oglaševanja. Google podatke obdeluje kot naš obdelovalec; prenos v Združene države pri tem ni izključen in temelji na sklepu o ustreznosti za okvir EU-US Data Privacy Framework oziroma na standardnih pogodbenih klavzulah. Pravna podlaga je naš zakoniti interes, da aplikacijo izboljšujemo in odpravljamo napake (člen 6(1)(f) GDPR).</p>
   <p>Različica iz TestFlighta pošilja izključno poročila o zrušitvah in nikakršne statistike; razvojna različica ne pošilja ne enega ne drugega. Možnosti, da bi statistiko izklopili v sami aplikaciji, zaenkrat ni – kdor je ne želi pošiljati, naj se nam oglasi.</p>
 
+  <h2>Cenovna obvestila</h2>
+  <p>Priljubljena črpalka ima lahko za vsako gorivo cenovno obvestilo, skupaj s tem, kdaj naj se oglasi: ob vsaki spremembi, ko se cena zviša, ko pade ali ko pade pod ceno, ki jo določite sami. Nova priljubljena črpalka dobi obvestilo ob vsaki spremembi vašega privzetega goriva, ki ga lahko spremenite ali izklopite. Da bi sporočila prišla do vas, aplikacija vaša cenovna obvestila kopira na naš strežnik – to je edino, kar tam kdaj shrani. Pošilja in hrani se:</p>
+  <ul>
+    <li>vsako obvestilo: črpalka, gorivo, pravilo in pri „Cena pade pod“ vaša cena;</li>
+    <li>naključni identifikator, ki ga aplikacija ustvari za to namestitev, in Firebase Installation ID, naslov, na katerega Firebase Cloud Messaging dostavlja sporočila.</li>
+  </ul>
+  <p>Namestitev brez obvestila ničesar od tega ne pošilja in je na našem strežniku ni. Ko izklopite zadnje obvestilo ali odstranite zadnjo priljubljeno črpalko, ki ga ima, strežnik namestitev in njena obvestila takoj izbriše. Če aplikacijo izbrišete, se izbrišejo, ko ji naslednjič pošljemo sporočilo in Firebase sporoči, da aplikacije ni več. Nič od tega ni povezano z vašim imenom: uporabniškega računa ni.</p>
+  <p>Ko se spremljana cena spremeni, naš strežnik pošlje sporočilo prek storitve Firebase Cloud Messaging podjetja Google, ki ga preda Applovi storitvi potisnih obvestil; sporočilo vsebuje ime črpalke, gorivo ter staro in novo ceno. Firebase šteje poslana in odprta sporočila po pravilu in gorivu, ne po črpalki, nastavitev, odstranitev ali odprtje obvestila pa se šteje v zgoraj opisano statistiko uporabe, s pravilom, nikoli pa z vašo ceno. Google je pri tem, kot je opisano zgoraj, naš obdelovalec. Te podatke obdelujemo, da vam zagotovimo obvestila, ki jih zahtevate (člen 6(1)(b) GDPR).</p>
+
   <h2>Nastavitve na vašem iPhonu</h2>
-  <p>Vaše privzeto gorivo, prostornina rezervoarja, priljubljene črpalke in izbrana aplikacija za zemljevide ostanejo na vaši napravi. Do našega strežnika ne pridejo in se izbrišejo skupaj z aplikacijo.</p>
+  <p>Vaše privzeto gorivo, prostornina rezervoarja, priljubljene črpalke in izbrana aplikacija za zemljevide ostanejo na vaši napravi. Do našega strežnika ne pridejo in se izbrišejo skupaj z aplikacijo – razen cenovnih obvestil priljubljenih črpalk, ki jih aplikacija kopira na naš strežnik, kot je opisano zgoraj.</p>
 
   <h2>Apple Maps, CarPlay in aplikacije za navigacijo</h2>
   <p>Zemljevid, posnetki okolice in naslovi črpalk prihajajo iz Apple Maps; Apple te zahteve obdeluje po svoji <a href="https://www.apple.com/legal/privacy/">politiki zasebnosti</a>. Ko tapnete „Navigiraj“, Tankaj preda koordinate črpalke aplikaciji, ki ste jo izbrali – Apple Maps, Google Maps, Waze ali Mapy.com – in od tam naprej velja njihova politika zasebnosti. V CarPlayu Tankaj iste podatke prikaže na zaslonu avtomobila in navigacijo preda Apple Maps; nič se ne zbira povrh tega.</p>
@@ -68,7 +77,7 @@
   <p>Tankaj nima oglasov in vam ne sledi po drugih aplikacijah ali spletnih straneh. Aplikacija ne uporablja oglaševalskega identifikatorja in podatkov ne posreduje tretjim za njihove lastne namene.</p>
 
   <h2>Vaše pravice</h2>
-  <p>Imate pravice, ki vam jih daje GDPR: dostop, popravek, izbris, omejitev obdelave, prenosljivost podatkov in ugovor zoper obdelavo na podlagi zakonitega interesa. Ker o vas razen kratkotrajnih zapisov strežnika in zgoraj opisanih statističnih podatkov, ki niso povezani z vašim imenom, ničesar ne shranjujemo, je navadno malo tega, kar bi lahko izdali ali izbrisali. Z zahtevo ali vprašanjem o tej politiki se obrnite na zgornji naslov.</p>
+  <p>Imate pravice, ki vam jih daje GDPR: dostop, popravek, izbris, omejitev obdelave, prenosljivost podatkov in ugovor zoper obdelavo na podlagi zakonitega interesa. Ker o vas razen kratkotrajnih zapisov strežnika ter zgoraj opisanih statističnih podatkov in cenovnih obvestil, od katerih nič ni povezano z vašim imenom, ničesar ne shranjujemo, je navadno malo tega, kar bi lahko izdali ali izbrisali. Cenovno obvestilo izbrišete sami tako, da ga izklopite. Z zahtevo ali vprašanjem o tej politiki se obrnite na zgornji naslov.</p>
   <p>Pritožiti se lahko tudi pri nadzornem organu za varstvo podatkov v državi, v kateri živite, v Sloveniji pri <a href="https://www.ip-rs.si">Informacijskem pooblaščencu</a>, na Češkem pa pri organu <a href="https://uoou.gov.cz">Úřad pro ochranu osobních údajů</a>.</p>
 
   <h2>Spremembe</h2>

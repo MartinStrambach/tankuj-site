@@ -31,9 +31,9 @@
 </header>
 <main>
   <h1>Polityka prywatności</h1>
-  <p class="meta">Obowiązuje od 23 września 2026 r.</p>
+  <p class="meta">Obowiązuje od 23 października 2026 r.</p>
 
-  <p>Aplikacja Tankuj nie wymaga konta i cię nie śledzi. Nie ma w niej reklam. Z twojego iPhone’a wychodzi, po pierwsze, to, co jest niezbędne do wyszukiwania – współrzędne punktu, wokół którego szukamy, albo przebieg zaplanowanej trasy, a do tego wybrane paliwo i promień; tego nie przechowujemy. Po drugie, wersja z App Store wysyła do Firebase statystyki użytkowania i raporty o awariach, żebyśmy widzieli, z czego w aplikacji się korzysta i gdzie się psuje. Co dokładnie to obejmuje, opisujemy poniżej.</p>
+  <p>Aplikacja Tankuj nie wymaga konta i cię nie śledzi. Nie ma w niej reklam. Z twojego iPhone’a wychodzi, po pierwsze, to, co jest niezbędne do wyszukiwania – współrzędne punktu, wokół którego szukamy, albo przebieg zaplanowanej trasy, a do tego wybrane paliwo i promień; tego nie przechowujemy. Po drugie, wersja z App Store wysyła do Firebase statystyki użytkowania i raporty o awariach, żebyśmy widzieli, z czego w aplikacji się korzysta i gdzie się psuje. Po trzecie, jeśli ustawisz alert cenowy, aplikacja kopiuje go na nasz serwer, żebyśmy mogli dać ci znać, gdy cena się zmieni. Co dokładnie to obejmuje, opisujemy poniżej.</p>
 
   <h2>Administrator</h2>
   <p>Aplikację Tankuj tworzy i publikuje Martin Strambach („my”), który jest administratorem danych przetwarzanych w sposób opisany na tej stronie. Kontakt: <a href="mailto:martin.strambach@gmail.com">martin.strambach@gmail.com</a>.</p>
@@ -59,8 +59,17 @@
   <p>Dane te nie są powiązane z twoim nazwiskiem, Tankuj nie używa identyfikatora reklamowego i niczego nie przekazuje w celach reklamowych. Google przetwarza dane jako nasz podmiot przetwarzający; przekazanie ich do Stanów Zjednoczonych nie jest przy tym wykluczone i opiera się na decyzji stwierdzającej odpowiedni stopień ochrony dla ram EU-US Data Privacy Framework lub na standardowych klauzulach umownych. Podstawą prawną jest nasz prawnie uzasadniony interes w ulepszaniu aplikacji i usuwaniu błędów (art. 6 ust. 1 lit. f RODO).</p>
   <p>Wersja z TestFlight wysyła wyłącznie raporty o awariach i żadnych statystyk; wersja deweloperska nie wysyła ani jednego, ani drugiego. Wyłączenia statystyk w samej aplikacji na razie nie ma – jeśli nie chcesz ich wysyłać, napisz do nas.</p>
 
+  <h2>Alerty cenowe</h2>
+  <p>Ulubiona stacja może mieć dla każdego paliwa alert cenowy wraz z tym, kiedy dać ci znać: przy każdej zmianie, gdy cena rośnie, gdy spada albo gdy spadnie poniżej ceny, którą ustawisz. Nowa ulubiona stacja dostaje alert przy każdej zmianie twojego domyślnego paliwa, który możesz zmienić lub wyłączyć. Żeby powiadomienia do ciebie docierały, aplikacja kopiuje twoje alerty na nasz serwer – to jedyne, co kiedykolwiek tam przechowuje. Wysyłane i przechowywane są:</p>
+  <ul>
+    <li>każdy alert: stacja, paliwo, reguła i przy „Cena spadnie poniżej” twoja cena;</li>
+    <li>losowy identyfikator, który aplikacja tworzy dla tej instalacji, oraz Firebase Installation ID, czyli adres, pod który Firebase Cloud Messaging dostarcza powiadomienia.</li>
+  </ul>
+  <p>Instalacja bez alertu nic z tego nie wysyła i nie ma jej na naszym serwerze. Gdy wyłączysz ostatni alert albo usuniesz ostatnią ulubioną stację, która go ma, serwer od razu usuwa instalację i jej alerty. Jeśli usuniesz aplikację, zostaną usunięte, gdy następnym razem wyślemy do niej powiadomienie, a Firebase zgłosi, że aplikacji już nie ma. Nic z tego nie jest powiązane z twoim nazwiskiem: konta nie ma.</p>
+  <p>Gdy obserwowana cena się zmieni, nasz serwer wysyła powiadomienie przez Firebase Cloud Messaging firmy Google, który przekazuje je do usługi powiadomień push Apple; powiadomienie zawiera nazwę stacji, paliwo oraz starą i nową cenę. Firebase liczy wysłane i otwarte powiadomienia według reguły i paliwa, nie według stacji, a ustawienie, usunięcie lub otwarcie alertu wlicza się do opisanych wyżej statystyk użytkowania – z regułą, ale nigdy z twoją ceną. Google jest przy tym, jak opisano wyżej, naszym podmiotem przetwarzającym. Dane te przetwarzamy, aby dostarczać alerty, o które prosisz (art. 6 ust. 1 lit. b RODO).</p>
+
   <h2>Ustawienia na twoim iPhonie</h2>
-  <p>Domyślne paliwo, pojemność baku, ulubione stacje i wybrana aplikacja mapowa zostają na twoim urządzeniu, gdzie korzysta z nich także widżet na ekranie początkowym. Nie trafiają na nasz serwer i są usuwane razem z aplikacją.</p>
+  <p>Domyślne paliwo, pojemność baku, ulubione stacje i wybrana aplikacja mapowa zostają na twoim urządzeniu, gdzie korzysta z nich także widżet na ekranie początkowym. Nie trafiają na nasz serwer i są usuwane razem z aplikacją – z wyjątkiem alertów cenowych ulubionych stacji, które aplikacja kopiuje na nasz serwer, jak opisano wyżej.</p>
 
   <h2>Apple Maps, CarPlay i aplikacje do nawigacji</h2>
   <p>Mapa, zdjęcia okolicy i adresy stacji pochodzą z Apple Maps; Apple przetwarza te zapytania zgodnie ze swoją <a href="https://www.apple.com/legal/privacy/">polityką prywatności</a>. Gdy stukniesz „Nawiguj”, Tankuj przekazuje współrzędne stacji wybranej przez ciebie aplikacji – Apple Maps, Google Maps, Waze lub Mapy.com – i od tej chwili obowiązuje jej polityka prywatności. W CarPlay Tankuj pokazuje te same dane na ekranie samochodu i przekazuje nawigację do Apple Maps; nic więcej nie jest przy tym zbierane.</p>
@@ -69,7 +78,7 @@
   <p>Tankuj nie ma reklam i nie śledzi cię w innych aplikacjach ani na stronach internetowych. Aplikacja nie używa identyfikatora reklamowego i nie przekazuje danych osobom trzecim do ich własnych celów.</p>
 
   <h2>Twoje prawa</h2>
-  <p>Przysługują ci prawa wynikające z RODO: dostęp do danych, ich sprostowanie, usunięcie, ograniczenie przetwarzania, przenoszenie danych oraz sprzeciw wobec przetwarzania opartego na prawnie uzasadnionym interesie. Ponieważ poza krótkotrwałymi logami serwera i opisanymi wyżej statystykami, które nie są powiązane z twoim nazwiskiem, nie przechowujemy o tobie niczego, zwykle niewiele jest do wydania czy usunięcia. Z żądaniem lub pytaniem dotyczącym tej polityki zwróć się na adres podany wyżej.</p>
+  <p>Przysługują ci prawa wynikające z RODO: dostęp do danych, ich sprostowanie, usunięcie, ograniczenie przetwarzania, przenoszenie danych oraz sprzeciw wobec przetwarzania opartego na prawnie uzasadnionym interesie. Ponieważ poza krótkotrwałymi logami serwera oraz opisanymi wyżej statystykami i alertami cenowymi, z których nic nie jest powiązane z twoim nazwiskiem, nie przechowujemy o tobie niczego, zwykle niewiele jest do wydania czy usunięcia. Alert cenowy możesz usunąć samodzielnie, wyłączając go. Z żądaniem lub pytaniem dotyczącym tej polityki zwróć się na adres podany wyżej.</p>
   <p>Możesz też złożyć skargę do organu nadzorczego w kraju, w którym mieszkasz – w Polsce do <a href="https://uodo.gov.pl">Prezesa Urzędu Ochrony Danych Osobowych</a>, w Czechach do <a href="https://uoou.gov.cz">Úřad pro ochranu osobních údajů</a>.</p>
 
   <h2>Zmiany</h2>

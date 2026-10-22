@@ -31,9 +31,9 @@
 </header>
 <main>
   <h1>Zásady ochrany soukromí</h1>
-  <p class="meta">Platí od 15. září 2026</p>
+  <p class="meta">Platí od 23. října 2026</p>
 
-  <p>Tankuj nevyžaduje účet a nesleduje vás. Neobsahuje reklamy. Z vašeho iPhonu odchází jednak to, co je potřeba k zodpovězení hledání – souřadnice místa, kolem kterého hledáte, zvolené palivo a okruh; nic z toho neukládáme. Jednak verze z App Storu posílá statistiku používání a hlášení pádů do služby Firebase, abychom viděli, které funkce se používají a na čem aplikace padá. Co přesně to zahrnuje, je popsáno níže.</p>
+  <p>Tankuj nevyžaduje účet a nesleduje vás. Neobsahuje reklamy. Z vašeho iPhonu odchází jednak to, co je potřeba k zodpovězení hledání – souřadnice místa, kolem kterého hledáte, zvolené palivo a okruh; nic z toho neukládáme. Jednak verze z App Storu posílá statistiku používání a hlášení pádů do služby Firebase, abychom viděli, které funkce se používají a na čem aplikace padá. Pokud si navíc nastavíte cenové upozornění, aplikace ho zkopíruje na náš server, abychom vám mohli dát vědět, když se cena změní. Co přesně to zahrnuje, je popsáno níže.</p>
 
   <h2>Kdo za aplikaci odpovídá</h2>
   <p>Aplikaci Tankuj vyvíjí a vydává Martin Strambach („my“), který je správcem osobních údajů pro zpracování popsané na této stránce. Kontakt: <a href="mailto:martin.strambach@gmail.com">martin.strambach@gmail.com</a>.</p>
@@ -58,8 +58,17 @@
   <p>Tyto údaje nejsou spojené s vaším jménem, aplikace nepoužívá reklamní identifikátor a nic nepředává pro reklamní účely. Google je zpracovává jako zpracovatel pro nás; přenos do USA přitom není vyloučen a opírá se o rozhodnutí o odpovídající ochraně k rámci EU-US Data Privacy Framework, případně o standardní smluvní doložky. Právním základem je náš oprávněný zájem na zlepšování aplikace a opravě chyb (čl. 6 odst. 1 písm. f) GDPR).</p>
   <p>Verze z TestFlightu posílá jen hlášení pádů, žádnou statistiku používání; vývojová verze neposílá ani jedno. Vypnout statistiku přímo v aplikaci zatím nejde – kdo ji posílat nechce, může nám napsat.</p>
 
+  <h2>Cenová upozornění</h2>
+  <p>Oblíbená stanice může mít u každého paliva cenové upozornění s tím, kdy se vám ozvat: při každé změně, když cena stoupne, když klesne, nebo když klesne pod cenu, kterou si zadáte. Nová oblíbená stanice dostane upozornění na každou změnu vašeho výchozího paliva; můžete ho změnit nebo vypnout. Aby k vám oznámení dorazila, aplikace vaše upozornění zkopíruje na náš server – je to jediné, co tam kdy ukládá. Odesílá a uchovává se:</p>
+  <ul>
+    <li>každé upozornění: stanice, palivo, pravidlo a u „Cena klesne pod“ vámi zadaná cena;</li>
+    <li>náhodný identifikátor, který si aplikace pro tuto instalaci vytvoří, a Firebase Installation ID, tedy adresa, na kterou služba Firebase Cloud Messaging oznámení doručuje.</li>
+  </ul>
+  <p>Instalace bez upozornění nic z toho neposílá a na našem serveru není. Když vypnete poslední upozornění nebo odeberete poslední oblíbenou stanici, která nějaké má, server instalaci i její upozornění hned smaže. Pokud aplikaci smažete, smažou se, až se na ni příště pokusíme poslat oznámení a Firebase ohlásí, že aplikace už není. Nic z toho není spojené s vaším jménem: žádný účet neexistuje.</p>
+  <p>Když se sledovaná cena změní, náš server pošle oznámení přes Firebase Cloud Messaging od Googlu, který ho předá službě Applu pro push oznámení; oznámení nese název stanice, palivo a starou a novou cenu. Firebase počítá odeslaná a otevřená oznámení podle pravidla a paliva, ne podle stanice, a nastavení, odebrání či otevření upozornění se započítá do výše popsané statistiky používání, s pravidlem, ale nikdy s vaší cenou. Google přitom vystupuje jako náš zpracovatel, jak je popsáno výše. Tyto údaje zpracováváme, abychom vám poskytli upozornění, o která žádáte (čl. 6 odst. 1 písm. b) GDPR).</p>
+
   <h2>Nastavení uložená v iPhonu</h2>
-  <p>Výchozí palivo, objem nádrže a zvolená navigační aplikace se ukládají pouze ve vašem zařízení. Na náš server se nikdy nedostanou a smažou se spolu s aplikací.</p>
+  <p>Výchozí palivo, objem nádrže a zvolená navigační aplikace se ukládají pouze ve vašem zařízení. Ukládají se tam i vaše oblíbené stanice. Nic z toho se nedostane na náš server a vše se smaže spolu s aplikací – kromě cenových upozornění, která aplikace kopíruje na náš server, jak je popsáno výše.</p>
 
   <h2>Apple Maps, CarPlay a navigační aplikace</h2>
   <p>Mapu, snímky Look Around a adresy stanic poskytují Apple Maps a Apple tyto požadavky zpracovává podle svých <a href="https://www.apple.com/legal/privacy/">zásad ochrany soukromí</a>. Když klepnete na Navigovat, Tankuj předá souřadnice stanice navigační aplikaci, kterou jste zvolili, tedy Apple Maps, Google Maps, Waze nebo Mapy.com, a od té chvíle platí zásady dané aplikace. V CarPlay ukazuje Tankuj stejná data na displeji auta a navigaci předává Apple Maps; nic dalšího se nesbírá.</p>
@@ -68,7 +77,7 @@
   <p>Tankuj neobsahuje reklamy a nesleduje vás napříč aplikacemi ani weby. Nepoužívá reklamní identifikátor a nesdílí údaje s třetími stranami pro jejich vlastní účely. Statistika popsaná výše slouží jen k vývoji této aplikace.</p>
 
   <h2>Vaše práva</h2>
-  <p>Kromě krátkodobých serverových logů a výše popsaných statistických údajů, které nejsou spojené s vaším jménem, o vás nic neukládáme, takže obvykle není co vydávat ani mazat. Práva podle GDPR, tedy na přístup, opravu, výmaz, omezení zpracování a námitku, vám přesto zůstávají a můžete je uplatnit, stejně jako se na cokoli k těmto zásadám zeptat, na výše uvedené adrese. Můžete také podat stížnost u <a href="https://uoou.gov.cz">Úřadu pro ochranu osobních údajů</a>.</p>
+  <p>Kromě krátkodobých serverových logů, výše popsaných statistických údajů a cenových upozornění, z nichž nic není spojené s vaším jménem, o vás nic neukládáme, takže obvykle není co vydávat ani mazat. Cenové upozornění smažete sami tím, že ho vypnete. Práva podle GDPR, tedy na přístup, opravu, výmaz, omezení zpracování a námitku, vám přesto zůstávají a můžete je uplatnit, stejně jako se na cokoli k těmto zásadám zeptat, na výše uvedené adrese. Můžete také podat stížnost u <a href="https://uoou.gov.cz">Úřadu pro ochranu osobních údajů</a>.</p>
 
   <h2>Změny</h2>
   <p>Pokud se tyto zásady změní, upravíme tuto stránku a datum v jejím záhlaví. Aktuální znění je vždy na této adrese.</p>
